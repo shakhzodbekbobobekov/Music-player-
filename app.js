@@ -402,14 +402,17 @@ const MAXPOINT = 12
 // let circle1 = creatiCercile(2, 3)
 // console.log(circle1);
 
-function Cirle(radius, x){
-    this.radius = radius,
-    this.darw = function(){
-        console.log('doira');
-    }
-}
+// function Cirle(radius, x){
+//     this.radius = radius,
+//     this.darw = function(){
+//         console.log('doira');
+//     }
+// }
 
-let circle = new Cirle(1)
-circle.color = 'green'
-delete circle.color 
-console.log(circle);
+// let circle = new Cirle(1)
+// circle.color = 'green'
+// delete circle.color 
+// console.log(circle);
+
+let greeting = new Number(545454)
+console.log(greeting);
