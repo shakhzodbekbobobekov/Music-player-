@@ -475,8 +475,6 @@ let odamlar = [
     }
  ]
 odamlar.forEach( function (odam){
-   if( !odam.job ){
-       odam.job = 'ishsiz'
-   }
+   if( odam.region == 'samarqand' )
    console.log(odam);
 } )
