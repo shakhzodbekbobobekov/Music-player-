@@ -1,4 +1,4 @@
-// let utishBall = 111
+// let utishBall : 111
 // let tuplaganBall = 177
 // let result = utishBall <= tuplaganBall ? `o'ra uqishga kirdizgiz va battar bo'ling` : `Uqishga kira olmadingiz Yaxshi omadli ekansiz janob`
 // console.log(result);
@@ -334,9 +334,9 @@ let todayDate = '04.12.2021'
 
 // isLandspace( 20, 5 )
 
-const MAXSPEED = 70
-const POINT = 5
-const MAXPOINT = 12
+// const MAXSPEED = 70
+// const POINT = 5
+// const MAXPOINT = 12
 
 
 // function checkSpeed(speed){    
@@ -414,6 +414,38 @@ const MAXPOINT = 12
 // delete circle.color 
 // console.log(circle);
 
-let greeting = new String('Hello')
-greeting.length
-console.log(greeting.length);
+// let greeting = new String('Hello')
+// greeting.length
+// console.log(greeting.length);
+let odamlar = [
+    {
+        ism : 'Ali',
+        age : 21,
+        region : 'Fergana',
+        job: 'dasturchi'
+    },
+    {
+        ism : 'Vali',
+        age : 22,
+        region : 'Fergana',
+        job: 'dasturchi'
+    },
+    {
+        ism : 'Gani',
+        age : 23,
+        region : 'Fergana',
+        job: 'dasturchi'
+    },
+    {
+        ism :'Alisa',
+        age : 18,
+        region : 'Fergana',
+    }
+]
+
+odamlar.forEach( function (odam) {
+    if( odam.job == undefined ){
+       odam.job = 'ishsiz'
+    }
+    console.log(odam);
+})
