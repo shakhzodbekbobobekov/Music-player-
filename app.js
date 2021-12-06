@@ -414,5 +414,6 @@ const MAXPOINT = 12
 // delete circle.color 
 // console.log(circle);
 
-let greeting = new Number(545454)
-console.log(greeting);
+let greeting = new String('Hello')
+greeting.length
+console.log(greeting.length);
