@@ -484,16 +484,29 @@ let todayDate = '04.12.2021'
 //     text.trimr()
 // );
 
-let parametrlar = {
-    ism : 'Shaxzodbek',
-    familiya: 'Bobobekov',
-    malumot: {
-        age: 23,
-        regio: 'samarqand',
-    },
-    func: function(){
-        console.log('kdjfhls');
+// let parametrlar = {
+//     ism : 'Shaxzodbek',
+//     familiya: 'Bobobekov',
+//     malumot: {
+//         age: 23,
+//         regio: 'samarqand',
+//     },
+//     func: function(){
+//         console.log('kdjfhls');
+//     }
+// }
+
+// console.log(parametrlar);
+
+function practise(one, two, three, four) {
+    return{
+        one,
+        two,
+        three,
+        four,
+        power(){
+            console.log('dfsjgdhkjdfhskjhfsdj');
+        }
     }
 }
-
-console.log(parametrlar);
+console.log(practise( 1,2,3,4 ));
