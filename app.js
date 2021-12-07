@@ -498,15 +498,18 @@ let todayDate = '04.12.2021'
 
 // console.log(parametrlar);
 
-function practise(one, two, three, four) {
-    return{
-        one,
-        two,
-        three,
-        four,
-        power(){
-            console.log('dfsjgdhkjdfhskjhfsdj');
-        }
-    }
+// function practise(one, two, three, four) {
+//     return one+two+three+four
+    
+// }
+// console.log(practise( 1,2,3,4 ))
+
+function numbers (one, two, three, four, five) {
+    this.one = one
+    this.two = two,
+    this.three = three,
+    this.four =four,
+    this.five = five
 }
-console.log(practise( 1,2,3,4 ));
+let newNumbers = new numbers('1','2','3','4','5')
+console.log(newNumbers);
