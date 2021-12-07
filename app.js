@@ -451,30 +451,49 @@ let todayDate = '04.12.2021'
 // })
 
 // let odamlar = [ 'Ali', 'Vali', 'G`ani', 'Nasiba' ]
-let odamlar = [ 
-    {
-        ism : 'xamidullo',
-        age : 21,
-        region : 'Namangan',
-        gander: 'male',
-        job : 'dasturchi'
-    },
-    {
-        ism : 'shaxzodbek',
-        age : 21,
-        region : 'samarqand',
-        gander: 'male',
-        job : 'dasturchi'
-    },
-    {
-        ism : 'alisa',
-        age : 35,
-        region : 'Namangan',
-        gander: 'famele'
+// let odamlar = [ 
+//     {
+//         ism : 'xamidullo',
+//         age : 21,
+//         region : 'Namangan',
+//         gander: 'male',
+//         job : 'dasturchi'
+//     },
+//     {
+//         ism : 'shaxzodbek',
+//         age : 21,
+//         region : 'samarqand',
+//         gander: 'male',
+//         job : 'dasturchi'
+//     },
+//     {
+//         ism : 'alisa',
+//         age : 35,
+//         region : 'Namangan',
+//         gander: 'famele'
 
+//     }
+//  ]
+// odamlar.forEach( function (odam){
+//    if( odam.region == 'samarqand' )
+//    console.log(odam);
+// } )
+
+// let text = 'Salom qannaysan nima gaplar'
+// console.log(
+//     text.trimr()
+// );
+
+let parametrlar = {
+    ism : 'Shaxzodbek',
+    familiya: 'Bobobekov',
+    malumot: {
+        age: 23,
+        regio: 'samarqand',
+    },
+    func: function(){
+        console.log('kdjfhls');
     }
- ]
-odamlar.forEach( function (odam){
-   if( odam.region == 'samarqand' )
-   console.log(odam);
-} )
+}
+
+console.log(parametrlar);
