@@ -504,12 +504,114 @@ let todayDate = '04.12.2021'
 // }
 // console.log(practise( 1,2,3,4 ))
 
-function numbers (one, two, three, four, five) {
-    this.one = one
-    this.two = two,
-    this.three = three,
-    this.four =four,
-    this.five = five
+// function numbers (one, two, three, four, five) {
+//     this.one = one
+//     this.two = two,
+//     this.three = three,
+//     this.four =four,
+//     this.five = five
+// }
+// let newNumbers = new numbers('1','2','3','4','5')
+// console.log(newNumbers);
+// let pototo = ['a','b','c']
+// for( i = 1; i <= pototo.length; i++ ){
+//     console.log( [i] + ' kartoshka' );
+// }
+// let summa = 0
+// for( i = 1; i<= 1978600; i++ ){
+//    summa += i
+// }
+
+// console.log(summa);
+
+// const user = {
+//     ism: 'Shaxzod',
+//     age: 21
+// }
+
+// const ksdkjys = Object.keys(user)
+// for( let i = 0; i < ksdkjys.length; i++ ){
+//     console.log(ksdkjys[i]);
+// }
+
+// const user = {
+//     ism: 'Shaxzod',
+//     age: 21
+// }
+
+// for( let uzgaruvchi in user ){
+//     console.log(uzgaruvchi, user.uzgaruvchi);
+// }
+ 
+// let kinolar = [ 'batman', 'spiderman', 'jojo' ]
+// for( let uzgaruvchi of kinolar ){
+//     console.log(uzgaruvchi, kinolar[uzgaruvchi]);
+// }
+
+// const users = [
+//    {
+//     ism: 'Shaxzod',
+//     age: 21,
+//    },
+//    {
+//     ism: 'Ali',
+//     age: 22,
+//    },
+//    {
+//     ism: 'Vali',
+//     age: 23,
+//    }
+// ]    
+
+// for( let user of users ){
+//     for( let key in user ){
+//         console.log(key, user[key]);
+//     }
+// }
+
+
+// function showNumbers(limit) {
+//     for( i = 0; i <= limit; i++  ){
+//         if( i % 2 === 0 ){
+//             console.log('EVEN');
+//         }else{
+//             console.log('ODD');
+//         }
+//     }
+// }
+// showNumbers(10);
+
+const marks = [80, 80, 50];
+
+// //Average = 70
+// let person = {
+//     ism : "Shaxzodbek",
+//     age: 21,
+// }
+
+// for( let uzgaruvchi in person ){
+//     console.log(uzgaruvchi + " : " + person[uzgaruvchi]);
+// }
+
+// let colors = ['oq','qora','yashil']
+// for( let color in colors ){
+//     console.log(color, colors[color]);
+// }
+
+// let colors = ['oq','qora','yashil']
+// for( let color of colors ){
+//     console.log(color, colors[color]);
+// }
+
+function greatValue(a, b){
+    if( a > b ) {
+        console.log(`Katta ${a}`);
+        console.log(`Kichik ${b}`);
+    }else if( b > a ) {
+        console.log(`Katta ${b}`);
+        console.log(`Kichik ${a}`);
+    }else if( a === b ) {
+        console.log(`Teng ${a = b}`);
+    }
 }
-let newNumbers = new numbers('1','2','3','4','5')
-console.log(newNumbers);
+greatValue(10,10)
