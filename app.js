@@ -604,14 +604,6 @@ const marks = [80, 80, 50];
 // }
 
 function greatValue(a, b){
-    if( a > b ) {
-        console.log(`Katta ${a}`);
-        console.log(`Kichik ${b}`);
-    }else if( b > a ) {
-        console.log(`Katta ${b}`);
-        console.log(`Kichik ${a}`);
-    }else if( a === b ) {
-        console.log(`Teng ${a = b}`);
-    }
+    console.log(( a > b ) ? a : b);    
 }
-greatValue(10,10)
+greatValue(8,10)
