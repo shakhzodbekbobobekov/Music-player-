@@ -582,7 +582,7 @@ let todayDate = '04.12.2021'
 // }
 // showNumbers(10);
 
-const marks = [80, 80, 50];
+// const marks = [80, 80, 50];
 
 // //Average = 70
 // let person = {
@@ -647,28 +647,41 @@ const marks = [80, 80, 50];
 // infocars(car)
 
 //Factore function
-let circle = {
-    radius: 1,
-    location : {
-        x: 1,
-        y: 2,
-    },
-    draw: function(){
-        console.log('Hello world')
-    },
-    isVibeti: true
+// let circle = {
+//     radius: 1,
+//     location : {
+//         x: 1,
+//         y: 2,
+//     },
+//     draw: function(){
+//         console.log('Hello world')
+//     },
+//     isVibeti: true
+// }
+
+// function createCirle(radius){
+//     return {
+//         radius,       
+//         draw(){
+//             console.log('Hello world')
+//         }
+//     }    
+// }
+// let let1 = createCirle(2)
+// console.log(let1);
+
+// let let2 = createCirle(12)
+// console.log(let2);
+
+// let Consturctor function
+
+function Circle(radius, kub){
+    this.radius = radius,
+    this.kub = kub,
+    this.draw = function(){
+        console.log('Salom hammaga !');
+    }
 }
 
-function createCirle(radius){
-    return {
-        radius,       
-        draw(){
-            console.log('Hello world')
-        }
-    }    
-}
-let let1 = createCirle(2)
-console.log(let1);
-
-let let2 = createCirle(12)
-console.log(let2);
+const circle = new Circle(1, 2)
+console.log(circle);
