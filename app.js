@@ -1,3 +1,4 @@
+{
 // let utishBall : 111
 // let tuplaganBall = 177
 // let result = utishBall <= tuplaganBall ? `o'ra uqishga kirdizgiz va battar bo'ling` : `Uqishga kira olmadingiz Yaxshi omadli ekansiz janob`
@@ -603,7 +604,28 @@ const marks = [80, 80, 50];
 //     console.log(color, colors[color]);
 // }
 
-function greatValue(a, b){
-    console.log(( a > b ) ? a : b);    
+// function greatValue(width, height){
+//     console.log(( width > height ) ? `${true}` : `${false}`);    
+// }
+// greatValue(110,10)
+
 }
-greatValue(8,10)
+
+// function kvadrat( a, b ){
+//     return a * b
+// }
+
+// let uzgaruvchi = kvadrat( 2, 4 )
+// console.log(uzgaruvchi);
+function sum(limit){
+    let summa = 0
+   for( i = 1; i <= limit; i++ ){
+       if( i % 3 === 0 ){
+           summa += i
+       }else if( i % 5 === 0 ){
+           summa += i
+       }
+   }
+   console.log(summa);
+}
+(sum(10))
