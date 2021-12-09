@@ -646,6 +646,7 @@ const marks = [80, 80, 50];
 // }
 // infocars(car)
 
+//Factore function
 let circle = {
     radius: 1,
     location : {
@@ -658,4 +659,16 @@ let circle = {
     isVibeti: true
 }
 
-console.log(circle.location);
+function createCirle(radius){
+    return {
+        radius,       
+        draw(){
+            console.log('Hello world')
+        }
+    }    
+}
+let let1 = createCirle(2)
+console.log(let1);
+
+let let2 = createCirle(12)
+console.log(let2);
