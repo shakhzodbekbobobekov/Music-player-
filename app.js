@@ -617,15 +617,45 @@ const marks = [80, 80, 50];
 
 // let uzgaruvchi = kvadrat( 2, 4 )
 // console.log(uzgaruvchi);
-function sum(limit){
-    let summa = 0
-   for( i = 1; i <= limit; i++ ){
-       if( i % 3 === 0 ){
-           summa += i
-       }else if( i % 5 === 0 ){
-           summa += i
-       }
-   }
-   console.log(summa);
+// function sum(limit){
+//     let summa = 0
+//    for( i = 1; i <= limit; i++ ){
+//        if( i % 3 === 0 ){
+//            summa += i
+//        }else if( i % 5 === 0 ){
+//            summa += i
+//        }
+//    }
+//    console.log(summa);
+// }
+// (sum(10))
+
+// let car = {
+//     model: 'Captiva',
+//     make: '5 Full',
+//     year: 2021,
+//     price: 28,
+// }
+
+// function infocars(cars){
+// for(let infoCar in cars ){
+//     if( typeof  cars[infoCar] == 'string' ){
+//         console.log(infoCar, cars[infoCar]);
+//     }
+// }
+// }
+// infocars(car)
+
+let circle = {
+    radius: 1,
+    location : {
+        x: 1,
+        y: 2,
+    },
+    draw: function(){
+        console.log('Hello world')
+    },
+    isVibeti: true
 }
-(sum(10))
+
+console.log(circle.location);
