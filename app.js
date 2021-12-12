@@ -707,14 +707,26 @@ let todayDate = '04.12.2021'
 // let keys = Object.values(user)
 // console.log(keys);
 
+// let user2 = Object.assign({}, user)
+// user2.firstName = 'Vali'
+// user2.age = 29
+// console.log(user);
+// console.log(user2);
+
 let user = {
     firstName: 'Shaxzodbek',
     lastName: 'Bobobekov',
-    age: 21,
+    adress: {
+        stret: 'Chaman',
+        nomer: 11
+    }
 }
 
-let user2 = Object.assign({}, user)
-user2.firstName = 'Vali'
-user2.age = 29
+let user2 = {...user}
+user2.firstName = 'Shohibek'
+user2.adress = {...user2.adress}
+user2.adress.stret = 'Chaman utar'
+user2.adress.nomer = 12
+
 console.log(user);
 console.log(user2);
