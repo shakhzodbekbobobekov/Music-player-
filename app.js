@@ -699,15 +699,22 @@ let todayDate = '04.12.2021'
 
 // console.log(new Circle(2));
 
+
+// console.log(user);
+
+// for( let key in user ) console.log(user[key]);
+
+// let keys = Object.values(user)
+// console.log(keys);
+
 let user = {
     firstName: 'Shaxzodbek',
     lastName: 'Bobobekov',
     age: 21,
 }
 
+let user2 = Object.assign({}, user)
+user2.firstName = 'Vali'
+user2.age = 29
 console.log(user);
-
-for( let key in user ) console.log(user[key]);
-
-let keys = Object.values(user)
-console.log(keys);
+console.log(user2);
