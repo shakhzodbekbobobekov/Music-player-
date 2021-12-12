@@ -718,15 +718,23 @@ let user = {
     lastName: 'Bobobekov',
     adress: {
         stret: 'Chaman',
-        nomer: 11
+        nomer: 11,
+        rent: {
+            home: 'Beruniy',
+            homeNumber: 77
+        }
     }
 }
 
 let user2 = {...user}
-user2.firstName = 'Shohibek'
+user2.firstName = 'Valiyev'
+user2.lastName = 'Abdunazar'
 user2.adress = {...user2.adress}
-user2.adress.stret = 'Chaman utar'
-user2.adress.nomer = 12
+user2.adress.stret = 'Bog"i shamol'
+user2.adress.nomer = 22
+user2.adress.rent = {...user2.adress.rent}
+user2.adress.rent.home = "Oltiariq"
+user2.adress.rent.homeNumber = 66
 
 console.log(user);
 console.log(user2);
