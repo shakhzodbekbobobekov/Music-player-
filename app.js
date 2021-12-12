@@ -675,13 +675,39 @@ let todayDate = '04.12.2021'
 
 // let Consturctor function
 
-function Circle(radius, kub){
-    this.radius = radius,
-    this.kub = kub,
-    this.draw = function(){
-        console.log('Salom hammaga !');
-    }
+// function Circle(radius, kub){
+//     this.radius = radius,
+//     this.kub = kub,
+//     this.draw = function(){
+//         console.log('Salom hammaga !');
+//     }
+// }
+
+// let circle = new Circle(1, 2)
+// circle.color = 'green'
+// circle.number = [ 1, 2, 3 ]
+// delete circle.color
+// console.log(circle);
+
+// function Circle(radius){
+//     this.radius = radius,
+//     this.color = 'green',
+//     this.drow = function func(){
+//         console.log('jfo');
+//     }
+// }
+
+// console.log(new Circle(2));
+
+let user = {
+    firstName: 'Shaxzodbek',
+    lastName: 'Bobobekov',
+    age: 21,
 }
 
-const circle = new Circle(1, 2)
-console.log(circle);
+console.log(user);
+
+for( let key in user ) console.log(key);
+
+let keys = Object.keys(user)
+console.log(keys);
