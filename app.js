@@ -707,7 +707,7 @@ let user = {
 
 console.log(user);
 
-for( let key in user ) console.log(key);
+for( let key in user ) console.log(user[key]);
 
-let keys = Object.keys(user)
+let keys = Object.values(user)
 console.log(keys);
