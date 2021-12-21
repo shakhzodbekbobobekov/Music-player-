@@ -739,7 +739,37 @@ let todayDate = '04.12.2021'
 // console.log(user);
 // console.log(user2);
 
+// let names = 'Shaxzodbek'
+// let natija = names.indexOf('a')
+// console.log(natija);
 
-// for( let i = 1; i <= 2; i++){
-//     randomNumbers = Math.floor(Math.random() * 2)
-//     natija.push(randomNumbers)
+// let userDate = {
+//     ism: 'Shaxzodbek',
+//     familiya: 'Bobobekov',
+//     age: 21
+// }
+
+// console.log(userDate['age']);
+
+// let newDate = new Date()
+// console.log(newDate);
+
+// let a = 18,
+//     b = 5;
+// if( a  % b === 3) {
+//     console.log('Hello if');
+// }else{
+//     console.log('Bye if');
+// }
+
+// let a = 5;
+// // console.log(a ++);
+// console.log(++ a);
+
+let a = 15,
+    b = 18;
+ if( a != b ){
+     console.log(' a b ga teng emas');
+ }else{
+     console.log('a b ga teng');
+ }
