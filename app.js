@@ -812,18 +812,38 @@ let user = {
     names: 'Ali',
     fullName: 'Samarov',
     year: 2000,
-    age: 21,
+    region: {
+        viloyat: 'Samarqand',
+        shahar: 'Kattaqurgan',
+    }
 }
 
-// let user2 = Object.assign({}, user)
-// user2.names = 'Alijon'
-// user2.age = 27
+let user2 = Object.assign( {}, user )
+let user3 = Object.assign( {}, user2.region )
+user2.names = 'Nan'
+user2.region.viloyat = "Fargona"
+user2.region.shahar = "Kirguli"
+console.log(user);
+console.log(user2);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // console.log(user);
 // console.log(user2);
 
-let user2 = {...user}
-user2.names = 'Bek'
-user2.age = 21
-console.log(user);
-console.log(user2);
+// let user2 = {...user}
+// user2.names = 'Bek'
+// user2.age = 21
+// console.log(user);
+// console.log(user2);
