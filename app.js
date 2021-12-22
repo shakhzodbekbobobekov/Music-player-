@@ -793,6 +793,21 @@ let todayDate = '04.12.2021'
 //         console.log(key, user[key]);
 //     }
 // }
+// let user = {
+//     names: 'Ali',
+//     fullName: 'Samarov',
+//     year: 2000,
+//     age: 21,
+// }
+
+// // for( let key in user ){
+// //     console.log(user[key]);
+// // }
+
+// let users = Object.keys(user )
+// let userss = Object.values(user)
+// console.log(users, userss);
+
 let user = {
     names: 'Ali',
     fullName: 'Samarov',
@@ -800,10 +815,9 @@ let user = {
     age: 21,
 }
 
-// for( let key in user ){
-//     console.log(user[key]);
-// }
+let user2 = Object.assign({}, user)
+user2.names = 'Alijon'
+user2.age = 27
 
-let users = Object.keys(user)
-let userss = Object.values(user)
-console.log(users, userss);
+console.log(user);
+console.log(user2);
