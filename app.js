@@ -839,6 +839,44 @@ let todayDate = '04.12.2021'
 // console.log(user);
 // console.log(user2);
 
-let myArray = [ 1, 2, 3, 4,5 ]
-myArray.splice( 2, 2, 'hello', 'book', 'dfv' )
-console.log(myArray);
+// let myArray = [ 
+//     {
+//         age: 21,
+//         nams: 'Shaxzodbek',
+//     },
+
+//     {
+//         age: 22,
+//         nams: 'Shaxzod',
+//     },
+
+//     {
+//         age: 23,
+//         nams: 'Shax',
+//     },
+
+//     {
+//         age: 24,
+//         nams: 'Sh',
+//     }
+// ]
+// myArray.splice( 2, 2, 'hello', 'book', 'dfv' )
+// console.log(myArray);
+
+
+let num1 = [ 1, 2, 3 ]
+let num2 = [ 4, 5, 6 ]
+let num3 = [ 7, 8, 9 ]
+let myString = [
+    {
+        age: 21,
+        ages: 22
+    },
+    {
+        age: 32,
+        ages: 33
+    }
+]
+
+let myContact = num1.concat( num2, num3, myString )
+console.log(myContact);
