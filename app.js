@@ -801,8 +801,9 @@ let user = {
 }
 
 // for( let key in user ){
-//     console.log(key);
+//     console.log(user[key]);
 // }
 
 let users = Object.keys(user)
-console.log(users);
+let userss = Object.values(user)
+console.log(users, userss);
