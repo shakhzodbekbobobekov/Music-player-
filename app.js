@@ -808,37 +808,28 @@ let todayDate = '04.12.2021'
 // let userss = Object.values(user)
 // console.log(users, userss);
 
-let user = {
-    names: 'Ali',
-    fullName: 'Samarov',
-    year: 2000,
-    region: {
-        viloyat: 'Samarqand',
-        shahar: 'Kattaqurgan',
-    }
-}
+// let user = {
+//     names: 'Ali',
+//     fullName: 'Samarov',
+//     year: 2000,
+//     region: {
+//         viloyat: 'Samarqand',
+//         shahar: 'Kattaqurgan',
+//     }
+// }
 
-let user2 = Object.assign( {}, user )
-let user3 = Object.assign( {}, user2.region )
-user2.names = 'Nan'
-user2.region.viloyat = "Fargona"
-user2.region.shahar = "Kirguli"
-console.log(user);
-console.log(user2);
-
-
+// let user2 = Object.assign( {}, user )
+// user2.region = Object.assign( {}, user2.region )
+// user2.names = 'Nan'
+// user2.region.viloyat = "Fargona"
+// user2.region.shahar = "Kirguli"
+// console.log(user);
+// console.log(user2);
 
 
-
-
-
-
-
-
-
-
-
-
+// let text = 'Assalomu alaykum. Hurmatli mijoz.';
+// console.log('end: ' + text.endsWith('omu'));
+// console.log('start: ' + text.startsWith('salo'));
 // console.log(user);
 // console.log(user2);
 
@@ -847,3 +838,7 @@ console.log(user2);
 // user2.age = 21
 // console.log(user);
 // console.log(user2);
+
+let myArray = [ 1, 2, 3, 4,5 ]
+myArray.splice( 2, 2, 'hello', 'book', 'dfv' )
+console.log(myArray);
