@@ -815,9 +815,15 @@ let user = {
     age: 21,
 }
 
-let user2 = Object.assign({}, user)
-user2.names = 'Alijon'
-user2.age = 27
+// let user2 = Object.assign({}, user)
+// user2.names = 'Alijon'
+// user2.age = 27
 
+// console.log(user);
+// console.log(user2);
+
+let user2 = {...user}
+user2.names = 'Bek'
+user2.age = 21
 console.log(user);
 console.log(user2);
