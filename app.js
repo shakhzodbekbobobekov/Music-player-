@@ -774,20 +774,35 @@ let todayDate = '04.12.2021'
 //      console.log('a b ga teng');
 //  }
 
-let users = [
-    {
-        names: 'Shaxzodbek',
-        age: 21,
-    },
+// let users = [
+//     {
+//         names: 'Shaxzodbek',
+//         age: 21,
+//     },
     
-    {
-        names: 'Shoxibek',
-        age: 17,
-    }
-]
+//     {
+//         names: 'Shoxibek',
+//         age: 17,
+//     }
+// ]
 
-console.log(users);
+// // console.log(users);
 
-for( let user of users ){
-    console.log(user);
+// for( let user of users ){
+//     for( let key in user ){
+//         console.log(key, user[key]);
+//     }
+// }
+let user = {
+    names: 'Ali',
+    fullName: 'Samarov',
+    year: 2000,
+    age: 21,
 }
+
+// for( let key in user ){
+//     console.log(key);
+// }
+
+let users = Object.keys(user)
+console.log(users);
