@@ -766,10 +766,28 @@ let todayDate = '04.12.2021'
 // // console.log(a ++);
 // console.log(++ a);
 
-let a = 15,
-    b = 18;
- if( a != b ){
-     console.log(' a b ga teng emas');
- }else{
-     console.log('a b ga teng');
- }
+// let a = 15,
+//     b = 18;
+//  if( a != b ){
+//      console.log(' a b ga teng emas');
+//  }else{
+//      console.log('a b ga teng');
+//  }
+
+let users = [
+    {
+        names: 'Shaxzodbek',
+        age: 21,
+    },
+    
+    {
+        names: 'Shoxibek',
+        age: 17,
+    }
+]
+
+console.log(users);
+
+for( let user of users ){
+    console.log(user);
+}
