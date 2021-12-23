@@ -864,19 +864,28 @@ let todayDate = '04.12.2021'
 // console.log(myArray);
 
 
-let num1 = [ 1, 2, 3 ]
-let num2 = [ 4, 5, 6 ]
-let num3 = [ 7, 8, 9 ]
-let myString = [
-    {
-        age: 21,
-        ages: 22
-    },
-    {
-        age: 32,
-        ages: 33
-    }
-]
+// let num1 = [ 1, 2, 3 ]
+// let num2 = [ 4, 5, 6 ]
+// let num3 = [ 7, 8, 9 ]
+// let myString = [
+//     {
+//         age: 21,
+//         ages: 22
+//     },
+//     {
+//         age: 32,
+//         ages: 33
+//     }
+// ]
 
-let myContact = num1.concat( num2, num3, myString )
-console.log(myContact);
+// let myContact = num1.concat( num2, num3, myString )
+// console.log(myContact);
+
+// let number = [ 1, 2, 3, 4, 5 ]
+// console.log(
+//     number.join(' *__* ')
+// );
+
+let anamils = 'text-dog-money-book'
+let myAnamils = anamils.split('-')
+console.log(myAnamils);
