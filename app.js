@@ -891,14 +891,19 @@ let todayDate = '04.12.2021'
 //     number.join('/')
 // );
 
-function kunMaqola(maqola) {
-    let words = maqola.split(" ")
-    console.log(words);
+// function kunMaqola(maqola) {
+//     let words = maqola.split(" ")
+//     console.log(words);
 
-    let id = words.join('-').toLowerCase()
-    console.log(id);
-}
+//     let id = words.join('-').toLowerCase()
+//     console.log(id);
+// }
 
-kunMaqola(
-    'Potensial qotillar chiqarayotgan avtomaktablar: «prava» topshirish xususiy qo‘llarga o‘tishi o‘zini oqlaydimi?'
-)
+// kunMaqola(
+//     'Potensial qotillar chiqarayotgan avtomaktablar: «prava» topshirish xususiy qo‘llarga o‘tishi o‘zini oqlaydimi?'
+// )
+
+// let text = "Telegram"
+// myArray = text.split('')
+// console.log(myArray);
+confirm('Assalomu alykum hammaga aziz janoblar!')
