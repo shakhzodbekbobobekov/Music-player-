@@ -881,11 +881,24 @@ let todayDate = '04.12.2021'
 // let myContact = num1.concat( num2, num3, myString )
 // console.log(myContact);
 
-// let number = [ 1, 2, 3, 4, 5 ]
+// let anamils = 'Lorem*ipsum*dolmor*emlit'
+// let myAnamils = anamils.split('*')
+// console.log(myAnamils);
+
+
+// let number = [ 1, 2, 3, 4, ]
 // console.log(
-//     number.join(' *__* ')
+//     number.join('/')
 // );
 
-let anamils = 'text-dog-money-book'
-let myAnamils = anamils.split('-')
-console.log(myAnamils);
+function kunMaqola(maqola) {
+    let words = maqola.split(" ")
+    console.log(words);
+
+    let id = words.join('-').toLowerCase()
+    console.log(id);
+}
+
+kunMaqola(
+    'Potensial qotillar chiqarayotgan avtomaktablar: «prava» topshirish xususiy qo‘llarga o‘tishi o‘zini oqlaydimi?'
+)
