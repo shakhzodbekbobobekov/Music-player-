@@ -906,14 +906,14 @@
 // let thereLetters = text.slice( 0, text.length - 2 );
 // console.log( twoLetters + thereLetters );
 
- let numbers = [ 6, 15, 19, 18 ]
-function selection(numbers) {
-     if( ( numbers[0] === 6 || numbers[number.length-1] === 6 )) 
-       console.log(true); 
-     else console.log(false);    
-  }
+//  let numbers = [ 6, 15, 19, 18 ]
+// function selection(numbers) {
+//      if( ( numbers[0] === 6 || numbers[number.length-1] === 6 )) 
+//        console.log(true); 
+//      else console.log(false);    
+//   }
 
-selection(numbers) 
+// selection(numbers) 
 
 // let number = [ 1, 2, 3, 2 ]
 // if( number === 6 ){
@@ -925,5 +925,12 @@ selection(numbers)
 // // let result = number.indexOf(0) == 1
 // if(number[0] == 1 && number[number.length-1] == 2) console.log('true');
 // else console.log('false');
+
+//Farhod Dadajanov darslari ichidagi topshiriqlar
+function kvadrat( a, b ) {
+  return a * b
+}
+
+console.log(kvadrat( 2, 4 ));
 
 
