@@ -906,26 +906,24 @@
 // let thereLetters = text.slice( 0, text.length - 2 );
 // console.log( twoLetters + thereLetters );
 
-/* let numbers = [ 6, 15, 19, 18 ]
+ let numbers = [ 6, 15, 19, 18 ]
 function selection(numbers) {
-  for( let key in numbers ){
-     if( 
-       numbers[key] == 6 
-       && 
-       ( numbers[key].indexOf(0) === 6 )
-       && 
-       ( numbers[key].lastIndexOf(numbers[key].length - 1 ) )
-       ) console.log(true); 
+     if( ( numbers[0] === 6 || numbers[number.length-1] === 6 )) 
+       console.log(true); 
      else console.log(false);    
   }
-}
 
-selection(numbers) */
+selection(numbers) 
 
-let number = [ 1, 2, 3, 2 ]
-// console.log(number);
-// let result = number.indexOf(0) == 1
-if(number[0] == 1 && number[number.length-1] == 2) console.log('true');
-else console.log('false');
+// let number = [ 1, 2, 3, 2 ]
+// if( number === 6 ){
+//   console.log('true' + number);
+// }else{
+//   console.log('false' + number);
+// }
+// // console.log(number);
+// // let result = number.indexOf(0) == 1
+// if(number[0] == 1 && number[number.length-1] == 2) console.log('true');
+// else console.log('false');
 
 
