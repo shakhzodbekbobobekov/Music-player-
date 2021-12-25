@@ -927,10 +927,13 @@
 // else console.log('false');
 
 //Farhod Dadajanov darslari ichidagi topshiriqlar
-function kvadrat( a, b ) {
-  return a * b
-}
+// function kvadrat( a, b ) {
+//   return a * b
+// }
 
-console.log(kvadrat( 2, 4 ));
+// console.log(kvadrat( 2, 4 ));
 
 
+let defultColor = 'qora';
+let userColor = 'oq';
+console.log( userColor || defultColor );
