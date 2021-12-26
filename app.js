@@ -1097,5 +1097,9 @@
 // // console.log(odamlar);
 
 let numbers = [ 2, 5, 3, 1, 4 ]
+
 numbers.sort()
+console.log(numbers);
+
+numbers.reverse()
 console.log(numbers);
