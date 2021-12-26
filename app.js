@@ -1062,36 +1062,40 @@
 // console.log(myContact);
 
 
-let odamlar = [
-  {
-    fname: 'Jon',
-    age: 21,
-    region: 'Fergana',
-    job: 'uqituvchi',
-  },
-  {
-    fname: 'Joa',
-    age: 22,
-    region: 'Fergana',
-    job: 'duxtur',
-  },
-  {
-    fname: 'Jona',
-    age: 23,
-    region: 'Fergana',
-    job: 'hamshira',
-  },
-  {
-    fname: 'Ali',
-    age: 20,
-    region: 'Samarkand',
-  }
-]
+// let odamlar = [
+//   {
+//     fname: 'Jon',
+//     age: 21,
+//     region: 'Fergana',
+//     job: 'uqituvchi',
+//   },
+//   {
+//     fname: 'Joa',
+//     age: 22,
+//     region: 'Fergana',
+//     job: 'duxtur',
+//   },
+//   {
+//     fname: 'Jona',
+//     age: 23,
+//     region: 'Fergana',
+//     job: 'hamshira',
+//   },
+//   {
+//     fname: 'Ali',
+//     age: 20,
+//     region: 'Samarkand',
+//   }
+// ]
 
-odamlar.forEach( function(odam) {
-  if( !odam.job){
-    // odam.job = 'dasturchi';
-    console.log(!odam.job);
-  }
-})
-// console.log(odamlar);
+// odamlar.forEach( function(odam) {
+//   if( !odam.job){
+//     // odam.job = 'dasturchi';
+//     console.log(!odam.job);
+//   }
+// })
+// // console.log(odamlar);
+
+let numbers = [ 2, 5, 3, 1, 4 ]
+numbers.sort()
+console.log(numbers);
