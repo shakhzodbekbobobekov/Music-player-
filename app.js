@@ -1049,3 +1049,8 @@
 // array.splice( 0, 3, 'bir' )
 // console.log(array);
 
+let first = [1, 2, 3];
+let second = [4, 5, 6];
+
+let myContact = [ ...first, '1', ...second ]
+console.log(myContact);
