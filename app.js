@@ -1052,5 +1052,12 @@
 let first = [1, 2, 3];
 let second = [4, 5, 6];
 
-let myContact = [ ...first, '1', ...second ]
+
+let myContact = first.concat(second, '2',true)
 console.log(myContact);
+
+
+
+
+// let myContact = [ ...first, '1', ...second ]
+// console.log(myContact);
