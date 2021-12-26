@@ -1067,16 +1067,19 @@ let odamlar = [
     fname: 'Jon',
     age: 21,
     region: 'Fergana',
+    job: 'uqituvchi',
   },
   {
     fname: 'Joa',
     age: 22,
     region: 'Fergana',
+    job: 'duxtur',
   },
   {
     fname: 'Jona',
     age: 23,
     region: 'Fergana',
+    job: 'hamshira',
   },
   {
     fname: 'Ali',
@@ -1086,7 +1089,9 @@ let odamlar = [
 ]
 
 odamlar.forEach( function(odam) {
-  if( odam.region == 'Fergana' ){
-    console.log(odam);
+  if( !odam.job){
+    // odam.job = 'dasturchi';
+    console.log(!odam.job);
   }
 })
+// console.log(odamlar);
