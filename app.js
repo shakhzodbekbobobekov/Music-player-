@@ -971,10 +971,24 @@
 //   // console.log('1. ', keys );
 // }
 
-function isLandscape( width, height ){
-  if( width > height ) return true
-  return false
+// function isLandscape( width, height ){
+//   if( width > height ) return true
+//   return false
+// }
+
+// let resultt = isLandscape( 11, 50)
+// console.log(resultt);
+let summa = 0
+function sum( limit ) {
+  for( let i = 0; i <= limit; i++ ) {
+    if( i % 3 == 0 ){
+       summa += i
+   }else if( i % 5 == 0 ){
+      summa += i
+   }
+  }
 }
 
-let resultt = isLandscape( 11, 50)
-console.log(resultt);
+sum(10)
+console.log(summa);
+
