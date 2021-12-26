@@ -1049,14 +1049,36 @@
 // array.splice( 0, 3, 'bir' )
 // console.log(array);
 
-let first = [1, 2, 3];
-let second = [4, 5, 6];
-let myContact = first.concat(second)
+// let first = [1, 2, 3];
+// let second = [4, 5, 6];
+// let myContact = first.concat(second)
 
 
-myContact.forEach((item, index) =>  console.log(index, ':', item));
+// myContact.forEach((item, index) =>  console.log(index, ':', item));
 
 
 
 // let myContact = [ ...first, '1', ...second ]
 // console.log(myContact);
+
+
+let odamlar = [
+  {
+    fname: 'Jon',
+    age: 21
+  },
+  {
+    fname: 'Joa',
+    age: 22
+  },
+  {
+    fname: 'Jona',
+    age: 23
+  }
+]
+
+odamlar.forEach( function(odam) {
+  if( odam.age == 22 ){
+    console.log('Yosh 22da');
+  }
+})
