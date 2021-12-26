@@ -1065,20 +1065,28 @@
 let odamlar = [
   {
     fname: 'Jon',
-    age: 21
+    age: 21,
+    region: 'Fergana',
   },
   {
     fname: 'Joa',
-    age: 22
+    age: 22,
+    region: 'Fergana',
   },
   {
     fname: 'Jona',
-    age: 23
+    age: 23,
+    region: 'Fergana',
+  },
+  {
+    fname: 'Ali',
+    age: 20,
+    region: 'Samarkand',
   }
 ]
 
 odamlar.forEach( function(odam) {
-  if( odam.age == 22 ){
-    console.log('Yosh 22da');
+  if( odam.region == 'Fergana' ){
+    console.log(odam);
   }
 })
