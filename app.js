@@ -1051,11 +1051,10 @@
 
 let first = [1, 2, 3];
 let second = [4, 5, 6];
+let myContact = first.concat(second)
 
 
-let myContact = first.concat(second, '2',true)
-console.log(myContact);
-
+myContact.forEach((item, index) =>  console.log(index, ':', item));
 
 
 
