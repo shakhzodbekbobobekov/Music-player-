@@ -978,17 +978,74 @@
 
 // let resultt = isLandscape( 11, 50)
 // console.log(resultt);
-let summa = 0
-function sum( limit ) {
-  for( let i = 0; i <= limit; i++ ) {
-    if( i % 3 == 0 ){
-       summa += i
-   }else if( i % 5 == 0 ){
-      summa += i
-   }
-  }
-}
+// let summa = 0
+// function sum( limit ) {
+//   for( let i = 0; i <= limit; i++ ) {
+//     if( i % 3 == 0 ){
+//        summa += i
+//    }else if( i % 5 == 0 ){
+//       summa += i
+//    }
+//   }
+// }
 
-sum(10)
-console.log(summa);
+// sum(10)
+// console.log(summa);
+
+
+// let car = {
+//   model: 'Tayota',
+//   make: 'Estila',
+//   year: 2016,
+//   price: 50000
+// }
+
+// function showPro(obj) {
+//   for( let keys in obj ){
+//     if( typeof obj[keys] === 'string' ){
+//       console.log(keys, obj[keys]);
+//     }
+//   }
+// }
+
+// showPro(car)
+
+// let car = {
+//   model: 'Tayota',
+//   make: 'Estila',  
+// }
+
+// // let car2 = {...car}
+// // car2.model = 'GM'
+
+
+
+
+
+// // // let car2 = car
+// // // car2.model = 'GM'
+// // console.log(car);
+// // console.log(car2);
+
+// function resultLaptop (Model, Parametr) {
+ 
+//   return {
+//     Model,
+//     Parametr,
+//     Xotira: {
+//       SSD: 256,
+//       HD: 1,
+//     },
+//     powerOn: function(){
+//       console.log('on');
+//     }
+//   }
+
+// }
+
+// console.log(resultLaptop ('Acer', 'i3 10'));
+
+// let array = [ 1, 2, 3, 'Salom', 'Xayr' ]
+// array.splice( 0, 3, 'bir' )
+// console.log(array);
 
