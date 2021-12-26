@@ -927,3 +927,54 @@
 // else console.log('false');
 
 //Farhod Dadajanov darslari ichidagi topshiriqlar
+// function kvadrat( a, b ) {
+//   return a * b
+// }
+
+// console.log(kvadrat( 2, 4 ));
+
+
+// let defultColor = 'qora';
+// let userColor = 'oq';
+// console.log( userColor || defultColor );
+// let isOpen 
+// console.log(!isOpen);
+
+// let color1 = 'oq'
+// let color2 = 'qora'
+
+
+// console.log(color2);
+// console.log(color1);
+
+// for( let i = 0; i <= 5; i++ ) {
+//   console.log( '😎', i );
+// }
+
+// let i = 0;
+// while( i <= 5 ) {
+//   console.log('✈', i);
+//   i++
+// }
+
+// let j = 0;
+// do {
+//   console.log('🚀', j);
+//   j++
+// }while( j <= 5 )
+// for( let keys in user ) {
+  //   console.log( user[keys]);
+  // }
+  
+//   let user = [ 'Ali', 'Baxrom', 'Salim' ]
+// for( let keys in user ) {
+//   // console.log('1. ', keys );
+// }
+
+function isLandscape( width, height ){
+  if( width > height ) return true
+  return false
+}
+
+let resultt = isLandscape( 11, 50)
+console.log(resultt);
