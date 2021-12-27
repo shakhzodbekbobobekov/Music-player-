@@ -1157,7 +1157,13 @@
 
 // console.log(getMaxNumber(myArray));
 
-let text ='assalomu alaykum';
-console.log(
-  text.substring( 0, 8 )
-  );
+// let text ='assalomu alaykum';
+// console.log(
+//   text.substring( 0, 8 )
+//   );
+
+function sum( names = 'Shaxzodbek ', age = 5 ){
+  console.log('Xush kelibsiz: ' + names + age);
+}
+
+sum()
