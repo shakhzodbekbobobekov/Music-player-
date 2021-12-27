@@ -1096,10 +1096,27 @@
 // })
 // // console.log(odamlar);
 
-let numbers = [ 2, 5, 3, 1, 4 ]
+// let numbers = [ 2, 5, 3, 1, 4 ]
 
-numbers.sort().reverse()
-console.log(numbers);
-
-// numbers.reverse()
+// numbers.sort().reverse()
 // console.log(numbers);
+
+// // numbers.reverse()
+// // console.log(numbers);
+
+// let courses = [
+//   { id:1, title: 'Redux' },
+//   { id:2, title: 'Node.js' },
+//   { id:3, title: 'ASP.net' },
+// ]
+
+// courses.sort( function( first, second ) {
+//   console.log(first.title, second.title);
+// })
+
+let numbers = [ 1, 3, 2, -5 ]
+let summa = 0
+for( number in numbers ){
+  summa += numbers[number]
+}
+console.log(summa);
