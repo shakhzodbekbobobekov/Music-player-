@@ -1140,19 +1140,24 @@
   
   // console.log(includes( myArray, 3 ));
   
-let myArray = [ 5, 2, 3, 4, -9]
+// let myArray = [ 5, 2, 3, 4, -9]
 
-function getMaxNumber(myArray) {
-  if( myArray.length === 0 )
-    return undefined
+// function getMaxNumber(myArray) {
+//   if( myArray.length === 0 )
+//     return undefined
 
-  let maxNumber = myArray[0];
-  for( let i = 1; i <= myArray.length; i++ ){
-    if( myArray[i] > maxNumber )
-      maxNumber = myArray[i]
-  }
+//   let maxNumber = myArray[0];
+//   for( let i = 1; i <= myArray.length; i++ ){
+//     if( myArray[i] > maxNumber )
+//       maxNumber = myArray[i]
+//   }
 
-  return maxNumber
-}
+//   return maxNumber
+// }
 
-console.log(getMaxNumber(myArray));
+// console.log(getMaxNumber(myArray));
+
+let text ='assalomu alaykum';
+console.log(
+  text.substring( 0, 8 )
+  );
