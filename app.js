@@ -1130,13 +1130,29 @@
 // let result = arrayNumber( -11, 5 )
 // console.log(newArray);
 
-let myArray = [ 1, 2, 3, ]
 
-function includes( myArray, elements ){
-  for( let element of myArray )
-    if( element ===  elements)
-        return true;      
-      return false;
+// function includes( myArray, elements ){
+  //   for( let element of myArray )
+  //     if( element ===  elements)
+  //         return true;      
+  //       return false;
+  // }
+  
+  // console.log(includes( myArray, 3 ));
+  
+let myArray = [ 5, 2, 3, 4, -9]
+
+function getMaxNumber(myArray) {
+  if( myArray.length === 0 )
+    return undefined
+
+  let maxNumber = myArray[0];
+  for( let i = 1; i <= myArray.length; i++ ){
+    if( myArray[i] > maxNumber )
+      maxNumber = myArray[i]
+  }
+
+  return maxNumber
 }
 
-console.log(includes( myArray, 3 ));
+console.log(getMaxNumber(myArray));
