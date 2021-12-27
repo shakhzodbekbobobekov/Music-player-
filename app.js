@@ -1120,12 +1120,23 @@
 //   summa += numbers[number]
 // }
 // console.log(summa);
-let newArray = []
-function arrayNumber( min, max ) {
-  for( let i = min; i <= max; i++ ){
-    newArray.push(i)
-  }
+// let newArray = []
+// function arrayNumber( min, max ) {
+//   for( let i = min; i <= max; i++ ){
+//     newArray.push(i)
+//   }
+// }
+
+// let result = arrayNumber( -11, 5 )
+// console.log(newArray);
+
+let myArray = [ 1, 2, 3, ]
+
+function includes( myArray, elements ){
+  for( let element of myArray )
+    if( element ===  elements)
+        return true;      
+      return false;
 }
 
-let result = arrayNumber( -11, 5 )
-console.log(newArray);
+console.log(includes( myArray, 3 ));
