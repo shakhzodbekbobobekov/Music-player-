@@ -1114,9 +1114,18 @@
 //   console.log(first.title, second.title);
 // })
 
-let numbers = [ 1, 3, 2, -5 ]
-let summa = 0
-for( number in numbers ){
-  summa += numbers[number]
+// let numbers = [ 1, 3, 2, -5 ]
+// let summa = 0
+// for( number in numbers ){
+//   summa += numbers[number]
+// }
+// console.log(summa);
+let newArray = []
+function arrayNumber( min, max ) {
+  for( let i = min; i <= max; i++ ){
+    newArray.push(i)
+  }
 }
-console.log(summa);
+
+let result = arrayNumber( -11, 5 )
+console.log(newArray);
