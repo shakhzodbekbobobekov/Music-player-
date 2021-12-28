@@ -1162,8 +1162,28 @@
 //   text.substring( 0, 8 )
 //   );
 
-function sum( names = 'Shaxzodbek ', age = 5 ){
-  console.log('Xush kelibsiz: ' + names + age);
-}
+// function sum( names = 'Shaxzodbek ', age = 5 ){
+//   console.log('Xush kelibsiz: ' + names + age);
+// }
 
-sum()
+// sum()
+
+//DOM !
+
+// let dom = document.body.children[0]
+// dom.style.color = 'red'
+// console.log(dom);
+
+// let firstElement = document.body.children[0]
+// let firstElementItem = firstElement.children[0]
+// let firstElementItemParent = firstElementItem.parentElement
+// let firstElementItemParentNode = firstElementItem.parentNode
+// console.log(firstElementItemParent);
+// console.log(firstElementItemParentNode);
+
+const infoClass = document.getElementsByClassName("text")
+console.log(infoClass);
+
+//Id
+const  infoId = document.getElementById('h2-Id')
+console.log(infoId);
