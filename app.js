@@ -1194,7 +1194,10 @@
 // console.log(infoClass1);
 // console.log(infoClass2);
 
-const classMisol = document.querySelector('.userClass')
-classMisol.innerHTML = '<i>Shaxzodbek</i>'
-const classMisol2 = document.querySelector('.userClass2')
-classMisol2.innerText = '<i>Shaxzodbek</i>'
+// const classMisol = document.querySelector('.userClass')
+// classMisol.innerHTML = '<i>Shaxzodbek</i>'
+// const classMisol2 = document.querySelector('.userClass2')
+// classMisol2.innerText = '<i>Shaxzodbek</i>'
+
+const text = document.querySelector('p')
+text.setAttribute( 'class', 'extra' )
