@@ -1202,7 +1202,13 @@
 // const text = document.querySelector('p')
 // text.setAttribute( 'class', 'extra' )
 
-const newElement = document.createElement( 'div' )
-newElement.setAttribute( 'class', 'container' )
-let elements = newElement.innerHTML = 'yangi div'
-console.log(elements);
+// const newElement = document.createElement( 'div' )
+// const wrapper = document.querySelector('.wrapper')
+// newElement.setAttribute( 'class', 'container' )
+// newElement.innerHTML = 'Shaxzodbek!'
+// wrapper.appendChild(newElement)
+// console.log(newElement);
+
+const ulItem = document.querySelector('#todo-list')
+const ulItems =  ulItem.children[2]
+console.log(ulItems);
