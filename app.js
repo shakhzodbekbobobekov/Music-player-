@@ -1188,7 +1188,13 @@
 // const  infoId = document.getElementById('h2-Id')
 // console.log(infoId); 
 
-const infoClass1 = document.querySelector('.class1')
-const infoClass2 = document.querySelector('.class2')
-console.log(infoClass1);
-console.log(infoClass2);
+
+// const infoClass1 = document.querySelector('.class1')
+// const infoClass2 = document.querySelector('.class2')
+// console.log(infoClass1);
+// console.log(infoClass2);
+
+const classMisol = document.querySelector('.userClass')
+classMisol.innerHTML = '<i>Shaxzodbek</i>'
+const classMisol2 = document.querySelector('.userClass2')
+classMisol2.innerText = '<i>Shaxzodbek</i>'
