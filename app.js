@@ -1208,7 +1208,12 @@
 // newElement.innerHTML = 'Shaxzodbek!'
 // wrapper.appendChild(newElement)
 // console.log(newElement);
+// todoList.removeChild(secondChild) // bolani chopish
 
-const ulItem = document.querySelector('#todo-list')
-const ulItems =  ulItem.children[2]
-console.log(ulItems);
+// const todoList = document.querySelector('#todo-list')
+// const secondItem = todoList.children[1]
+// const  newElement = document.createElement('li')
+// newElement.innerText = 'Tel 4'
+// todoList.appendChild(newElement)
+
+// todoList.replaceChild(newElement, secondItem)
