@@ -1181,9 +1181,14 @@
 // console.log(firstElementItemParent);
 // console.log(firstElementItemParentNode);
 
-const infoClass = document.getElementsByClassName("text")
-console.log(infoClass);
+// const infoClass = document.getElementsByClassName("text")
+// console.log(infoClass);
 
-//Id
-const  infoId = document.getElementById('h2-Id')
-console.log(infoId);
+// //Id
+// const  infoId = document.getElementById('h2-Id')
+// console.log(infoId); 
+
+const infoClass1 = document.querySelector('.class1')
+const infoClass2 = document.querySelector('.class2')
+console.log(infoClass1);
+console.log(infoClass2);
