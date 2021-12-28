@@ -1217,3 +1217,10 @@
 // todoList.appendChild(newElement)
 
 // todoList.replaceChild(newElement, secondItem)
+
+const container = document.querySelector('.container')
+const newElement = document.createElement('div')
+newElement.classList.add('square')
+newElement.style.backgroundColor = 'red'
+console.log(newElement);
+container.appendChild(newElement)
