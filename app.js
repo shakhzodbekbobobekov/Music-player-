@@ -1221,6 +1221,10 @@
 const container = document.querySelector('.container')
 const newElement = document.createElement('div')
 newElement.classList.add('square')
-newElement.style.backgroundColor = 'red'
 console.log(newElement);
-container.appendChild(newElement)
+container.appendChild(newElement) 
+
+const newCircle = document.createElement('div')
+newCircle.classList.add('circle')
+console.log(newCircle);
+newElement.appendChild(newCircle)
