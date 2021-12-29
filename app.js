@@ -1265,4 +1265,10 @@ function addItem(){
     newItem.classList.add('item')
     newItem.innerText = `item ${items.length + 1}`
     todoList.append(newItem)
+
+    newItem.addEventListener('click', deleteItem)
+}
+
+function deleteItem(e) {
+    items[0].remove()
 }
