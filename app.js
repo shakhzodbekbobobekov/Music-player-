@@ -1230,18 +1230,25 @@
 // newElement.appendChild(newCircle)
 
 
-const btnPlus = document.querySelector('#btnPlus')
-const btnMinus = document.querySelector('#btnMinus')
-const parag = document.querySelector('p')
+// const btnPlus = document.querySelector('#btnPlus')
+// const btnMinus = document.querySelector('#btnMinus')
+// const parag = document.querySelector('p')
 
-btnPlus.addEventListener( 'click', addNumber)
-btnMinus.addEventListener( 'click', addNumberMinus)
-let startNumber = 1
+// btnPlus.addEventListener( 'click', addNumber)
+// btnMinus.addEventListener( 'click', addNumberMinus)
+// let startNumber = 1
 
-function addNumber(){
-    parag.innerText = startNumber++
-}
+// function addNumber(){
+//     parag.innerText = startNumber ++
+// }
 
-function addNumberMinus(){
-    parag.innerText = --startNumber - 1
+// function addNumberMinus(){
+//     parag.innerText = --startNumber - 1
+// }
+
+const text = document.getElementById('text') 
+const inner = document.getElementById('inner') 
+
+function wordFocus() {
+    inner.innerText = text.value;
 }
