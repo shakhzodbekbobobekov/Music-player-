@@ -1258,6 +1258,10 @@ const btn = document.querySelector('#submit')
 const items = todoList.children
 // Event Listeners
 btn.addEventListener('click', addItem) 
+todoList.addEventListener('click', function() {
+    console.log('todo yani `ul` bosildi');
+})
+
 
 // Functions
 function addItem(){
@@ -1270,6 +1274,7 @@ function addItem(){
 }
 
 function deleteItem(e) {
-    const eachItem = e.target
-    eachItem.remove()
+    e.stopPropagation();
+    const eachItem = e.target;
+    eachItem.remove();
 }
