@@ -1270,5 +1270,6 @@ function addItem(){
 }
 
 function deleteItem(e) {
-    items[0].remove()
+    const eachItem = e.target
+    eachItem.remove()
 }
