@@ -1246,6 +1246,23 @@
 //     parag.innerText = --startNumber - 1
 // }
 
-const text = document.querySelector('#text') 
+// const text = document.querySelector('#text') 
  
-alert(typeof text.value);
+// alert(typeof text.value);
+//clear
+
+// Selectors
+const todoList = document.querySelector('.todo-list')
+const todoNr = document.querySelector('.todo-nr')
+const btn = document.querySelector('#submit')
+const items = todoList.children
+// Event Listeners
+btn.addEventListener('click', addItem) 
+
+// Functions
+function addItem(){
+    const newItem = document.createElement('li')
+    newItem.classList.add('item')
+    newItem.innerText = `item ${items.length + 1}`
+    todoList.append(newItem)
+}
