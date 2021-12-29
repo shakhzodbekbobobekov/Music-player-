@@ -1246,9 +1246,6 @@
 //     parag.innerText = --startNumber - 1
 // }
 
-const text = document.getElementById('text') 
-const inner = document.getElementById('inner') 
-
-function wordFocus() {
-    inner.innerText = text.value;
-}
+const text = document.querySelector('#text') 
+ 
+alert(typeof text.value);
