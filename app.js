@@ -1230,8 +1230,18 @@
 // newElement.appendChild(newCircle)
 
 
+const btnPlus = document.querySelector('#btnPlus')
+const btnMinus = document.querySelector('#btnMinus')
+const parag = document.querySelector('p')
 
-function sayHello() {
-    console.log("Assalomu alaykum ummati Muhammad !");
+btnPlus.addEventListener( 'click', addNumber)
+btnMinus.addEventListener( 'click', addNumberMinus)
+let startNumber = 1
+
+function addNumber(){
+    parag.innerText = startNumber++
 }
- 
+
+function addNumberMinus(){
+    parag.innerText = --startNumber - 1
+}
