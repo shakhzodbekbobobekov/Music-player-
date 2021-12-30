@@ -1275,4 +1275,17 @@ const message = document.querySelector('.message')
 
 const fNameText = document.querySelector('.fName')
 const ageText = document.querySelector('.age')
-const isMarried = document.querySelector('.isMarried')
+const isMarriedText = document.querySelector('.isMarried')
+
+//Event listener
+fName.addEventListener('input', function(e){
+    fNameText.innerHTML = `Name: ${e.target.value}`
+} )
+
+age.addEventListener('input', function(e){
+    ageText.innerHTML = `Age: ${e.target.value}`
+} )
+
+isMarried.addEventListener('input', function(e){
+    isMarriedText.innerHTML = `isMarried: ${e.target.value}`
+} )
