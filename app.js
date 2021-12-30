@@ -1289,3 +1289,13 @@ age.addEventListener('input', function(e){
 isMarried.addEventListener('input', function(e){
     isMarriedText.innerHTML = `isMarried: ${e.target.value}`
 } )
+
+btnSubmit.addEventListener('click', function(){
+    message.classList.add('message')
+    message.innerHTML = 'Submit'
+})
+
+btnCancel.addEventListener('click', function(){
+    message.classList.add('message')
+    message.innerHTML = 'Cancel'
+})
