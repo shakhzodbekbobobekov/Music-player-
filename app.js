@@ -1291,11 +1291,9 @@ isMarried.addEventListener('input', function(e){
 } )
 
 btnSubmit.addEventListener('click', function(){
-    message.classList.add('message')
-    message.innerHTML = 'Submit'
+    message.innerHTML = 'Succesul ✌'
 })
 
 btnCancel.addEventListener('click', function(){
-    message.classList.add('message')
-    message.innerHTML = 'Cancel'
+    message.innerHTML = 'Unsuccesul Try again 😥'
 })
