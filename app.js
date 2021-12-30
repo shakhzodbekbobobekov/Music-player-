@@ -1252,29 +1252,27 @@
 //clear
 
 // Selectors
-const todoList = document.querySelector('.todo-list')
-const todoNr = document.querySelector('.todo-nr')
-const btn = document.querySelector('#submit')
-const items = todoList.children
-// Event Listeners
-btn.addEventListener('click', addItem) 
-todoList.addEventListener('click', function() {
-    console.log('todo yani `ul` bosildi');
-})
+// const todoList = document.querySelector('.todo-list')
+// const todoNr = document.querySelector('.todo-nr')
+// const btn = document.querySelector('#submit')
+// const items = todoList.children
+// // Event Listeners
+// btn.addEventListener('click', addItem) 
+// todoList.addEventListener('click', function() {
+//     console.log('todo yani `ul` bosildi');
+// })
 
 
-// Functions
-function addItem(){
-    const newItem = document.createElement('li')
-    newItem.classList.add('item')
-    newItem.innerText = `item ${items.length + 1}`
-    todoList.append(newItem)
+// Selectors
+const fName = document.querySelector('form #fName')
+const age = document.querySelector('form #age')
+const isMarried = document.querySelector('form #isMarried')
 
-    newItem.addEventListener('click', deleteItem)
-}
+const btnSubmit = document.querySelector('.btnSubmit')
+const btnCancel = document.querySelector('.btnCancel')
 
-function deleteItem(e) {
-    e.stopPropagation();
-    const eachItem = e.target;
-    eachItem.remove();
-}
+const message = document.querySelector('.message')
+
+const fNameText = document.querySelector('.fName')
+const ageText = document.querySelector('.age')
+const isMarried = document.querySelector('.isMarried')
