@@ -1,23 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="main.css" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Easy-peasy || form</title>
   </head>
   <body>
+    <div class="container">
+      <h1><code> EASY-PEASY CONTACT FORM 😊 </code></h1>
+      <br />
+      <div class="container__area">
+        <form action="#">
 
-    <ul class="todo-list"></ul>
+          <input
+            type="text"
+            name="fName"
+            id="fName"
+            placeholder="type your name..."
+            autocomplete="off"
+          />
+          <input
+            type="number"
+            name="age"
+            id="age"
+            placeholder="type your age..."
+            autocomplete="off"
+          />
+          <input
+            type="text"
+            name="isMarried"
+            id="isMarried"
+            placeholder="type your married 👏 (yes/no) ..."
+            autocomplete="off"
+          />
 
-    <h2>
-        Numberof items:
-        <b class="todo-nr"></b>
-    </h2>
+          <div class="btns">
+              <button type="button" class="btnSubmit">SUBMIT</button>
+              <button type="reset" class="btnCancel">CANCEL</button>
+          </div>
+        </form>
+      </div>
 
-    <button id="submit">SUBMIT</button>
+      <div class="container__text">
+        <p class="fName"></p>
+        <p class="age"></p>
+        <p class="isMarried"></p>
+      </div>
 
+      <p class="message"></p>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
