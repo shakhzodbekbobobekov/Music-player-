@@ -1256,44 +1256,55 @@
 // const todoNr = document.querySelector('.todo-nr')
 // const btn = document.querySelector('#submit')
 // const items = todoList.children
-// // Event Listeners
-// btn.addEventListener('click', addItem) 
-// todoList.addEventListener('click', function() {
-//     console.log('todo yani `ul` bosildi');
+// // // Event Listeners
+// // btn.addEventListener('click', addItem) 
+// // todoList.addEventListener('click', function() {
+// //     console.log('todo yani `ul` bosildi');
+// // })
+
+// /* ------------------------------ Comment ------------------------------ */
+// const fName = document.querySelector('form #fName')
+// const age = document.querySelector('form #age')
+// const isMarried = document.querySelector('form #isMarried')
+
+// const btnSubmit = document.querySelector('.btnSubmit')
+// const btnCancel = document.querySelector('.btnCancel')
+
+// const message = document.querySelector('.message')
+
+// const fNameText = document.querySelector('.fName')
+// const ageText = document.querySelector('.age')
+// const isMarriedText = document.querySelector('.isMarried')
+
+// //Event listener
+// fName.addEventListener('input', function(e){
+//     fNameText.innerHTML = `Name: ${e.target.value}`
+// } )
+
+// age.addEventListener('input', function(e){
+//     ageText.innerHTML = `Age: ${e.target.value}`
+// } )
+
+// isMarried.addEventListener('input', function(e){
+//     isMarriedText.innerHTML = `isMarried: ${e.target.value}`
+// } )
+
+// btnSubmit.addEventListener('click', function(){
+//     message.innerHTML = 'Succesul ✌'
 // })
 
+// btnCancel.addEventListener('click', function(){
+//     message.innerHTML = 'Unsuccesul Try again 😥'
+// })
 
-// Selectors
-const fName = document.querySelector('form #fName')
-const age = document.querySelector('form #age')
-const isMarried = document.querySelector('form #isMarried')
+let answers = []
+let arr = [
+    'ismingiz janob:',
+    'familiynagiz janob:',
+    'tug`ulgan yilingiz:'
+]
+for(let i = 0; i < arr.length; i++){
+    answers[i] = prompt(arr[i])
+}
 
-const btnSubmit = document.querySelector('.btnSubmit')
-const btnCancel = document.querySelector('.btnCancel')
-
-const message = document.querySelector('.message')
-
-const fNameText = document.querySelector('.fName')
-const ageText = document.querySelector('.age')
-const isMarriedText = document.querySelector('.isMarried')
-
-//Event listener
-fName.addEventListener('input', function(e){
-    fNameText.innerHTML = `Name: ${e.target.value}`
-} )
-
-age.addEventListener('input', function(e){
-    ageText.innerHTML = `Age: ${e.target.value}`
-} )
-
-isMarried.addEventListener('input', function(e){
-    isMarriedText.innerHTML = `isMarried: ${e.target.value}`
-} )
-
-btnSubmit.addEventListener('click', function(){
-    message.innerHTML = 'Succesul ✌'
-})
-
-btnCancel.addEventListener('click', function(){
-    message.innerHTML = 'Unsuccesul Try again 😥'
-})
+console.log(answers); 
