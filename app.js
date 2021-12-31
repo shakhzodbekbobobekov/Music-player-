@@ -1297,14 +1297,36 @@
 //     message.innerHTML = 'Unsuccesul Try again 😥'
 // })
 
-let answers = []
-let arr = [
-    'ismingiz janob:',
-    'familiynagiz janob:',
-    'tug`ulgan yilingiz:'
-]
-for(let i = 0; i < arr.length; i++){
-    answers[i] = prompt(arr[i])
-}
+// let answers = []
+// let arr = [
+//     'ismingiz janob:',
+//     'familiynagiz janob:',
+//     'tug`ulgan yilingiz:'
+// ]
+// for(let i = 0; i < arr.length; i++){
+//     answers[i] = prompt(arr[i])
+// }
 
-console.log(answers); 
+// console.log(answers); 
+
+//Swicht case
+
+// let age = prompt('yosh:')
+// switch(age){
+//     case 18:
+//         alert('18')
+//         break
+//     case 50:
+//         alert('50')
+//         break
+//     default:
+//         alert('tugri mas')
+// }
+
+//*confirm 
+let natija = confirm('Yoshingiz nechada:')
+if(natija == true){
+    alert('Javob uchun katta rahmat')
+}else{
+    alert('Natija yuq !')
+}
