@@ -1324,9 +1324,18 @@
 // }
 
 //*confirm 
-let natija = confirm('Yoshingiz nechada:')
-if(natija == true){
-    alert('Javob uchun katta rahmat')
-}else{
-    alert('Natija yuq !')
+// let natija = confirm('Yoshingiz nechada:')
+// if(natija == true){
+//     alert('Javob uchun katta rahmat')
+// }else{
+//     alert('Natija yuq !')
+// }
+
+function playFootball(name, callbacck){
+    console.log(`Name of player ${name}`);
+    callbacck()
 }
+
+playFootball('MoSalah', function(){
+    console.log('Uning gooli 100 ta');
+})
