@@ -1336,6 +1336,8 @@ function playFootball(name, callbacck){
     callbacck()
 }
 
-playFootball('MoSalah', function(){
+function gool(){
     console.log('Uning gooli 100 ta');
-})
+}
+
+playFootball('MoSalah', gool())
