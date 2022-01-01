@@ -1342,8 +1342,11 @@
 
 // playFootball('MoSalah', gool())
 
-let text = 'Hello world'
-let text2 = text.split('')
-text2[0] = 'M'
-let text3 = text2.join('')
-console.log(text3);
+// let text = 'Hello world'
+// let text2 = text.split('')
+// text2[0] = 'M'
+// let text3 = text2.join('')
+// console.log(text3);
+
+let num = [2, 10, 17, 24, 8]
+console.log(num.sort());
