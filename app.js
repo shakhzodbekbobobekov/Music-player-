@@ -1331,13 +1331,19 @@
 //     alert('Natija yuq !')
 // }
 
-function playFootball(name, callbacck){
-    console.log(`Name of player ${name}`);
-    callbacck()
-}
+// function playFootball(name, callbacck){
+//     console.log(`Name of player ${name}`);
+//     callbacck()
+// }
 
-function gool(){
-    console.log('Uning gooli 100 ta');
-}
+// function gool(){
+//     console.log('Uning gooli 100 ta');
+// }
 
-playFootball('MoSalah', gool())
+// playFootball('MoSalah', gool())
+
+let text = 'Hello world'
+let text2 = text.split('')
+text2[0] = 'M'
+let text3 = text2.join('')
+console.log(text3);
