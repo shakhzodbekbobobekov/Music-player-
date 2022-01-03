@@ -1348,5 +1348,18 @@
 // let text3 = text2.join('')
 // console.log(text3);
 
-let num = [2, 10, 17, 24, 8]
-console.log(num.sort());
+// let num = [2, 10, 17, 24, 8]
+// let abs = ['a', 'b', 'c']
+
+// let natija = num.concat(abs)
+// console.log(natija);
+
+// function func(a,b,c){
+//     console.log(a);
+//     console.log(b);
+//     console.log(c);
+// }
+
+// let number = [1,2,3]
+// console.log(...number);
+
