@@ -1,88 +1,14 @@
-/* defoult styles */
-*::after,
-*::before {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
 }
 
-body {
-    box-sizing: border-box;
-    font-family: sans-serif;
-    padding: 0.5rem;
-    margin-top: 40px;
-}
-
-.container {
-    width: 400px;
-    margin: 20px auto;
-}
-
-.container__area form input {
+.btn {
+    padding: 10px 15px;
+    margin: 50px;
     border: none;
-    border-bottom: 1px solid #909090;
-    outline: none;
-    font-size: 18px;
-    width: 100%;
-    padding: 0.25rem 0.5rem;
-    margin-top: 20px;
-}
-
-.btns {
-    display: flex;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.btns .btnSubmit, 
-.btns .btnCancel {
-    border-radius: 2px;
+    background-color: aqua;
+    border-radius: 10px;
     cursor: pointer;
-    font-size: 16px;
-    padding: 0.5rem;
-    border: none;
-    color: #fff;
-}
-
-.btns .btnSubmit {
-    background-color: rgb(6, 169, 55);
-}
-
-.btns .btnCancel {
-    background-color: rgb(139, 25, 5);
-    margin-left: 10px;
-}
-
-.btnSubmit:hover {
-    background-color: rgb(4, 206, 64);
-}
-
-.btnCancel:hover {
-    background-color: rgb(209, 43, 14);
-}
-
-.container__text {
-    width: 100%;
-    border: 1px solid #909090;
-    border-top: none;
-    padding: 1.5rem;
-    margin-top: 2rem;
-}
-
-.message {
-    animation-name: anim;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes anim {
-    50% {
-        transform: translateX(250px);
-    }
-}
-
-.container__text p {
-    font-size: 28px;
-    margin-top: 20px;
-    font-family: monospace;
+    border: 1px solid #000;
 }

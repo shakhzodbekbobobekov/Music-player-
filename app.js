@@ -1368,8 +1368,17 @@
 // }, 2000 )
 
 
-function logger(){
-    console.log('Hello world');
-}
+// function logger(){
+//     console.log('Hello world');
+// }
 
-const timer = setTimeout(logger, 1000)
+// const timer = setTimeout(logger, 1000)
+// 'use strict'
+let btns;
+const btn = document.querySelector('.btn')
+
+btn.addEventListener('click', () => {
+    btn = setInterval(function() {
+        console.log('Shaxzodjon');
+    }, 1000);
+})
