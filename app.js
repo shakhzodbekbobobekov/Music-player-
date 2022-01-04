@@ -1379,6 +1379,9 @@ let btns;
 i = 0;
 btn.addEventListener('click', () => {
     btns = setInterval(function() {
+        if(i === 3){
+            clearInterval(btns)
+        }
         console.log('Shaxzodjon');
         i++
         console.log(i);
