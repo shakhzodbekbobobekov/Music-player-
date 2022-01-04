@@ -1374,11 +1374,13 @@
 
 // const timer = setTimeout(logger, 1000)
 // 'use strict'
-let btns;
 const btn = document.querySelector('.btn')
-
+let btns;
+i = 0;
 btn.addEventListener('click', () => {
-    btn = setInterval(function() {
+    btns = setInterval(function() {
         console.log('Shaxzodjon');
+        i++
+        console.log(i);
     }, 1000);
 })
