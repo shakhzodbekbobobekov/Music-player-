@@ -1363,3 +1363,6 @@
 // let number = [1,2,3]
 // console.log(...number);
 
+const timer = setTimeout( function(){
+    console.log('Hello world');
+}, 2000 )
