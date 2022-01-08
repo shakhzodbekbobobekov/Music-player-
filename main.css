@@ -4,26 +4,35 @@
     box-sizing: border-box;
 }
 
-.wrapper {
-    width: 1200px;
-    margin: 50px auto;
-    display: flex;
-    background-color: #000;
-    border-radius: 10px;
-    padding: 12px;
+
+#btn {
+    padding: 50px;
+    background-color: rgb(11, 170, 170);
+    color: #fff;
+    border: none;
 }
 
-.kvadrat {
-    background-color: #fff;
-    width: 100px;
-    height: 100px;    
-    border-radius: 10px;
-    margin: 15px;
+.btnClass {
+    padding: 50px;
+    background-color: rgb(170, 101, 11);
+    color: #fff;
+    border: none;
 }
 
-.cicrle {
-    width: inherit;
-    height: inherit;
-    background-color: aqua;
-    border-radius: 50%;
+.btnClassMinus {
+    padding: 50px;
+    background-color: rgb(8, 201, 82);
+    color: #fff;
+    border: none;
+}
+
+#btn:hover {
+    background-color: rgba(63, 175, 11, 0.322);
+}
+
+p {
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    margin-left: 200px;
 }
