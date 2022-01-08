@@ -1363,27 +1363,63 @@
 // let number = [1,2,3]
 // console.log(...number);
 
+
+
+// function logger(){
+    //     console.log('Hello world');
+    // }
+    
+    // const timer = setTimeout(logger, 1000)
+    // 'use strict'
+    // const btn = document.querySelector('.btn')
+    // let btns;
+    // i = 0;
+    // btn.addEventListener('click', () => {
+        //     btns = setInterval(function() {
+            //         if(i === 3){
+                //             clearInterval(btns)
+                //         }
+                //         console.log('Shaxzodjon');
+                //         i++
+                //         console.log(i);
+                //     }, 1000);
+                // })
+
+
+
 // const timer = setTimeout( function(){
 //     console.log('Hello world');
 // }, 2000 )
 
+// const text = document.querySelector('p')
+// text.setAttribute('class', 'text')secondDiv threeDiv
+const  firstDiv = document.querySelector('.firstDiv')
+const  secondDiv = document.querySelector('.secondDiv')
+const  threeDiv = document.querySelector('.threeDiv')
 
-// function logger(){
-//     console.log('Hello world');
-// }
+/* first item */
+const  firstDivInElement = document.createElement('h1')
+firstDivInElement.setAttribute('class', 'textH1')
+firstDivInElement.innerHTML = 'First Item 🚀'
+firstDivInElement.style.color = 'red'
+/* /first item */
 
-// const timer = setTimeout(logger, 1000)
-// 'use strict'
-const btn = document.querySelector('.btn')
-let btns;
-i = 0;
-btn.addEventListener('click', () => {
-    btns = setInterval(function() {
-        if(i === 3){
-            clearInterval(btns)
-        }
-        console.log('Shaxzodjon');
-        i++
-        console.log(i);
-    }, 1000);
-})
+/* second item */
+const  secondDivInElement = document.createElement('h2')
+secondDivInElement.setAttribute('class', 'textH2')
+secondDivInElement.innerHTML = 'Second Item 🚀'
+secondDivInElement.style.color = 'blue'
+/* /second item */
+
+/* three item */
+const  threeDivInElement = document.createElement('h3')
+threeDivInElement.setAttribute('class', 'textH3')
+threeDivInElement.innerHTML = 'Three Item 🚀'
+threeDivInElement.style.color = 'aqua'
+/* /three item */
+
+/* Apend child */
+firstDiv.appendChild(firstDivInElement)
+secondDiv.appendChild(secondDivInElement)
+threeDiv.appendChild(threeDivInElement)
+/* /Apend child */
