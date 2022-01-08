@@ -1,14 +1,29 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.text {
-    color: #fff;
+.wrapper {
+    width: 1200px;
+    margin: 50px auto;
+    display: flex;
     background-color: #000;
+    border-radius: 10px;
+    padding: 12px;
 }
 
-/* ! commentni birimi */
-/* @ commentni birimi */
-/* Todo commentni birimi */
-/* ? commentni birimi */
+.kvadrat {
+    background-color: #fff;
+    width: 100px;
+    height: 100px;    
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.cicrle {
+    width: inherit;
+    height: inherit;
+    background-color: aqua;
+    border-radius: 50%;
+}

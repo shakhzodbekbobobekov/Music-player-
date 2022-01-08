@@ -1392,34 +1392,51 @@
 // }, 2000 )
 
 // const text = document.querySelector('p')
-// text.setAttribute('class', 'text')secondDiv threeDiv
-const  firstDiv = document.querySelector('.firstDiv')
-const  secondDiv = document.querySelector('.secondDiv')
-const  threeDiv = document.querySelector('.threeDiv')
+// // text.setAttribute('class', 'text')secondDiv threeDiv
+// const  firstDiv = document.querySelector('.firstDiv')
+// const  secondDiv = document.querySelector('.secondDiv')
+// const  threeDiv = document.querySelector('.threeDiv')
 
-/* first item */
-const  firstDivInElement = document.createElement('h1')
-firstDivInElement.setAttribute('class', 'textH1')
-firstDivInElement.innerHTML = 'First Item 🚀'
-firstDivInElement.style.color = 'red'
-/* /first item */
+// /* first item */
+// const  firstDivInElement = document.createElement('h1')
+// firstDivInElement.setAttribute('class', 'textH1')
+// firstDivInElement.innerHTML = 'First Item 🚀'
+// firstDivInElement.style.color = 'red'
+// /* /first item */
 
-/* second item */
-const  secondDivInElement = document.createElement('h2')
-secondDivInElement.setAttribute('class', 'textH2')
-secondDivInElement.innerHTML = 'Second Item 🚀'
-secondDivInElement.style.color = 'blue'
-/* /second item */
+// /* second item */
+// const  secondDivInElement = document.createElement('h2')
+// secondDivInElement.setAttribute('class', 'textH2')
+// secondDivInElement.innerHTML = 'Second Item 🚀'
+// secondDivInElement.style.color = 'blue'
+// /* /second item */
 
-/* three item */
-const  threeDivInElement = document.createElement('h3')
-threeDivInElement.setAttribute('class', 'textH3')
-threeDivInElement.innerHTML = 'Three Item 🚀'
-threeDivInElement.style.color = 'aqua'
-/* /three item */
+// /* three item */
+// const  threeDivInElement = document.createElement('h3')
+// threeDivInElement.setAttribute('class', 'textH3')
+// threeDivInElement.innerHTML = 'Three Item 🚀'
+// threeDivInElement.style.color = 'aqua'
+// /* /three item */
 
-/* Apend child */
-firstDiv.appendChild(firstDivInElement)
-secondDiv.appendChild(secondDivInElement)
-threeDiv.appendChild(threeDivInElement)
-/* /Apend child */
+// /* Apend child */
+// firstDiv.appendChild(firstDivInElement)
+// secondDiv.appendChild(secondDivInElement)
+// threeDiv.appendChild(threeDivInElement)
+// /* /Apend child */
+
+// const todoList = document.querySelector('#todoList')
+// const newItem = document.createElement('li')
+// newItem.innerHTML = 'Tel'
+// ttodoList.append(newItem)
+// ttodoList.replaceChild(newItem, todoList.children[0])
+// console.log(document.baseURI); cicrle
+
+const fatherDev = document.querySelector('.wrapper')
+const newKvadrat = document.createElement('div')
+newKvadrat.setAttribute('class', 'kvadrat')
+fatherDev.append(newKvadrat)
+
+
+const inItem = document.createElement('div')
+inItem.setAttribute('class', 'cicrle')
+newKvadrat.append(inItem)
