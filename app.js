@@ -1506,16 +1506,28 @@
 //     bottomText.classList.add('message')
 // })
 
-const todoList = document.querySelector('.todo-list')
-const btn = document.querySelector('.btn')
-let i = 0
+// const todoList = document.querySelector('.todo-list')
+// const btn = document.querySelector('.btn')
+// let i = 0
+// btn.addEventListener('click', function(){
+//     const newItem = document.createElement('li')
+//     newItem.classList.add('item')
+//     newItem.innerText = `item ${++i}`
+//     tooList.append(newItem)
+//     //
+//     newItem.addEventListener('click', function(){
+//         newItem.remove()
+//     })
+// })
+
+const text = document.querySelector('#text')
+const btn = document.querySelector('#btn')
+const h1 = document.querySelector('#h1')
+
 btn.addEventListener('click', function(){
-    const newItem = document.createElement('li')
-    newItem.classList.add('item')
-    newItem.innerText = `item ${++i}`
-    todoList.append(newItem)
-    //
-    newItem.addEventListener('click', function(){
-        newItem.remove()
-    })
+    if( text.value === 'salom' ){
+        h1.style.display = 'block'
+    }else{
+        console.log('close');
+    }   
 })
