@@ -1458,9 +1458,64 @@
 //     number.innerHTML  = '0'
 // })
 
-const input = document.querySelector('#input')
-const inner = document.querySelector('#inner')
+// const input = document.querySelector('#input')
+// const inner = document.querySelector('#inner')
+// const btn = document.querySelector('#btn')
 
-input.addEventListener('keyup', function(){
-   inner.innerHTML = input.value
+// btn.addEventListener('click', function() {
+//     // input.addEventListener('keyup', function(){
+//         inner.innerHTML = input.value
+//     //  })
+// })
+
+
+
+
+// /* Selectors */
+// const fName = document.querySelector('#fName')
+// const age = document.querySelector('#age')
+// const isMarried = document.querySelector('#isMarried')
+// // 1
+// const bottomText = document.querySelector('.message')
+// const btnSubmit = document.querySelector('.btnSubmit')
+// const btnCancel = document.querySelector('.btnCancel')
+// // 2
+// const fNameText = document.querySelector('.fName')
+// const ageText = document.querySelector('.age')
+// const isMarriedText = document.querySelector('.isMarried')
+
+// fName.addEventListener('keyup', function(){
+//     fNameText.innerHTML = `📝 ${fName.value}`
+// })
+
+// age.addEventListener('keyup', function(){
+//     ageText.innerHTML = `😥 ${age.value}`
+// })
+
+// isMarried.addEventListener('keyup', function(){
+//     isMarriedText.innerHTML = `😋 ${isMarried.value}`
+// })
+
+// btnSubmit.addEventListener('click', function(){
+//     bottomText.innerHTML = 'Succesful send! ✌'
+//     bottomText.classList.add('message')
+// })
+
+// btnCancel.addEventListener('click', function(){
+//     bottomText.innerHTML = 'Unsuccesful send! Try again 😥'
+//     bottomText.classList.add('message')
+// })
+
+const todoList = document.querySelector('.todo-list')
+const btn = document.querySelector('.btn')
+let i = 0
+btn.addEventListener('click', function(){
+    const newItem = document.createElement('li')
+    newItem.classList.add('item')
+    newItem.innerText = `item ${++i}`
+    todoList.append(newItem)
+    //
+    newItem.addEventListener('click', function(){
+        newItem.remove()
+    })
 })
