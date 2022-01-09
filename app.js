@@ -1440,20 +1440,27 @@
 // const inItem = document.createElement('div')
 // inItem.setAttribute('class', 'cicrle')
 // newKvadrat.append(inItem)
-const btn = document.querySelector('#btn')
-const btnClass = document.querySelector('.btnClass')
-const btnClassMinus = document.querySelector('.btnClassMinus')
-const number = document.querySelector('p')
+// const btn = document.querySelector('#btn')
+// const btnClass = document.querySelector('.btnClass')
+// const btnClassMinus = document.querySelector('.btnClassMinus')
+// const number = document.querySelector('p')
 
-let i = 0 ;
-btn.addEventListener( 'click', function(){
-    number.innerHTML = `${++i}`
-} )
+// let i = 0 ;
+// btn.addEventListener( 'click', function(){
+//     number.innerHTML = `${i*4}`
+// } )
 
-btnClassMinus.addEventListener('click', function(){
-    number.innerHTML  = `${--i}`
-})
+// btnClassMinus.addEventListener('click', function(){
+//     number.innerHTML  = `${i*2}`
+// })
 
-btnClass.addEventListener('click', function(){
-    number.innerHTML  = '0'
+// btnClass.addEventListener('click', function(){
+//     number.innerHTML  = '0'
+// })
+
+const input = document.querySelector('#input')
+const inner = document.querySelector('#inner')
+
+input.addEventListener('keyup', function(){
+   inner.innerHTML = input.value
 })
