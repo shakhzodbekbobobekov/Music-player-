@@ -1533,15 +1533,29 @@
 // })
 
 
-const btn1 = document.querySelector('#btn1')
-const btn2 = document.querySelector('#btn2')
-const btn3 = document.querySelector('#btn3')
-const container = document.querySelector('.container')
-const blackk = document.querySelector('.blackk')
-const backendContainer = document.querySelector('.backend-container')
+// const btn1 = document.querySelector('#btn1')
+// const btn2 = document.querySelector('#btn2')
+// const btn3 = document.querySelector('#btn3')
+// const container = document.querySelector('.container')
+// const blackk = document.querySelector('.blackk')
+// const backendContainer = document.querySelector('.backend-container')
 
-btn1.addEventListener('click', function(){
-    backendContainer.style.display = "block";
-    blackk.style.display = "block";
+// btn1.addEventListener('click', function(){
+//     backendContainer.style.display = "block";
+//     blackk.style.display = "block";
 
+// })
+
+
+let club = [
+    {nike: 'FC RM', reyting: 100},
+    {nike: 'FC Bar', reyting: 90},
+    {nike: 'FC MY', reyting: 95},
+    {nike: 'FC Ben', reyting: 50}
+]
+
+const clubs = club.filter(function(oneClub){
+    return oneClub.reyting > 90
 })
+
+console.log(clubs);
