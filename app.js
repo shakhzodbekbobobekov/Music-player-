@@ -1520,14 +1520,28 @@
 //     })
 // })
 
-const text = document.querySelector('#text')
-const btn = document.querySelector('#btn')
-const h1 = document.querySelector('#h1')
+// const text = document.querySelector('#text')
+// const btn = document.querySelector('#btn')
+// const h1 = document.querySelector('#h1')
 
-btn.addEventListener('click', function(){
-    if( text.value === 'salom' ){
-        h1.style.display = 'block'
-    }else{
-        console.log('close');
-    }   
+// btn.addEventListener('click', function(){
+//     if( text.value === 'salom' ){
+//         h1.style.display = 'block'
+//     }else{
+//         console.log('close');
+//     }   
+// })
+
+
+const btn1 = document.querySelector('#btn1')
+const btn2 = document.querySelector('#btn2')
+const btn3 = document.querySelector('#btn3')
+const container = document.querySelector('.container')
+const blackk = document.querySelector('.blackk')
+const backendContainer = document.querySelector('.backend-container')
+
+btn1.addEventListener('click', function(){
+    backendContainer.style.display = "block";
+    blackk.style.display = "block";
+
 })
