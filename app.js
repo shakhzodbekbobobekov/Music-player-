@@ -1547,28 +1547,44 @@
 // })
 
 // ! First metod
-let club = [
-    'java script ninja cours',
-    'c++',
-    'pyton',
-    'math pyhis',
-    'gentra amg best cars'
+// let club = [
+//     'java script ninja cours',
+//     'c++',
+//     'pyton',
+//     'math pyhis',
+//     'gentra amg best cars'
+// ]
+
+// const clubs = club.map(function(oneClub){
+//     if( oneClub.length > 15 ){
+//         return oneClub
+//     }else{
+//         return 'ha - ha'
+//     }
+// })
+
+// console.log(clubs);
+
+// todo Second metod
+// let colors = [ 'oq', 'qora', 'kuk' ]
+// let newColors = colors.map(function(color){
+//     return color.length
+// })
+
+// console.log(newColors);
+
+// * 
+let kinolar = [
+    'Panjara ortida',
+    'Tillo qidirib',
+    'Uyna yasha kul bu dunyoda',
+    'Terrorni izlab',
+    'Monstert bu daxshat',
+    'Vaxshiy uzb kino'
 ]
 
-const clubs = club.map(function(oneClub){
-    if( oneClub.length > 15 ){
-        return oneClub
-    }else{
-        return 'ha - ha'
-    }
+let newKinolar = kinolar.find(function(kino){
+    return kino.includes('uzb')
 })
 
-console.log(clubs);
-
-// ? Second metod
-let colors = [ 'oq', 'qora', 'kuk' ]
-let newColors = colors.map(function(color){
-    return color
-})
-
-console.log(newColors);
+console.log(newKinolar);
