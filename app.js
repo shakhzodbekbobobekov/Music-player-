@@ -1546,16 +1546,29 @@
 
 // })
 
-
+// ! First metod
 let club = [
-    {nike: 'FC RM', reyting: 100},
-    {nike: 'FC Bar', reyting: 90},
-    {nike: 'FC MY', reyting: 95},
-    {nike: 'FC Ben', reyting: 50}
+    'java script ninja cours',
+    'c++',
+    'pyton',
+    'math pyhis',
+    'gentra amg best cars'
 ]
 
-const clubs = club.filter(function(oneClub){
-    return oneClub.reyting > 90
+const clubs = club.map(function(oneClub){
+    if( oneClub.length > 15 ){
+        return oneClub
+    }else{
+        return 'ha - ha'
+    }
 })
 
 console.log(clubs);
+
+// ? Second metod
+let colors = [ 'oq', 'qora', 'kuk' ]
+let newColors = colors.map(function(color){
+    return color
+})
+
+console.log(newColors);
