@@ -1573,18 +1573,18 @@
 
 // console.log(newColors);
 
-// * 
+// // * 
 let kinolar = [
     'Panjara ortida',
-    'Tillo qidirib',
+    'Tillor qidirib',
     'Uyna yasha kul bu dunyoda',
     'Terrorni izlab',
-    'Monstert bu daxshat',
+    'Mornstert bu daxshat',
     'Vaxshiy uzb kino'
 ]
 
-let newKinolar = kinolar.find(function(kino){
-    return kino.includes('uzb')
+let searchKino = kinolar.map(function(kino){
+    return (kino.length >15) ? kino : 'kam uzr oma aka'
 })
 
-console.log(newKinolar);
+console.log(searchKino);
