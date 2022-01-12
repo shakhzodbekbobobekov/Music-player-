@@ -1578,8 +1578,63 @@
 
 // fun("df");
 
-let harflar = [16, 12, 20, 79, 81, 2, 5]
-harflar.sort(function( a, b) {
-    return a - b 
-})
-console.log(harflar);
+// let harflar = [16, 12, 20, 79, 81, 2, 5]
+// let natija = harflar.sort( (a,b) => {
+//   return a - b 
+// })
+// console.log(natija);
+
+// let names = 'Shaxzodbek',
+// names2 = this.names
+// console.log(names);
+
+// let user = {
+//   names: 'Salim',
+//   age: 12
+// }
+
+// let jobs=  'taksis'
+
+// user.job = jobs
+// console.log(user);
+// const user ={
+//   fnane: 'salim',
+//   age: 22
+// }
+// function registr(){
+//   console.log(this);
+// }
+// const natija = registr.bind(user)
+// natija()
+
+// function Todo( names, fullName ){
+//   this.names = names,
+//   this.fullName = names
+// }
+
+// let natija = new Todo( "shaxzodbeek", 'Bobobekov' )
+// console.log(natija);
+
+// function Todo(nams, age){
+//   this.nams = nams,
+//   this.age = age
+// }
+
+// let natija = new Todo('f',23)
+// console.log(natija);
+
+// let football = {
+//   ves: 52,
+//   buy: 1.72
+// }
+
+// let play = {}
+
+// Object.setPrototypeOf(play, football)
+// console.log(play.ves);
+
+let natija = setTimeout((fname) => {
+  console.log('Hello', fname);
+}, 1000, 'Bob')
+
+console.log(natija);
