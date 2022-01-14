@@ -1633,8 +1633,41 @@
 // Object.setPrototypeOf(play, football)
 // console.log(play.ves);
 
-let natija = setTimeout((fname) => {
-  console.log('Hello', fname);
-}, 1000, 'Bob')
+// function fname(ism, age) {
+//   console.log('Hello', ism, age);
+// }
+// // fname('Bob')
 
-console.log(natija);
+// let natija = setTimeout(fname, 1000, 'bob', 25)
+// // console.log(natija);
+
+// let clear = clearInterval(natija)
+
+// console.log(clear);
+// let i=0
+// function buy(){
+//   console.log(i++);
+//   // for( let i=0; i<=20; i++ ){
+//   //   }
+// }
+
+// let natija = setInterval(buy, 1000)
+// console.log(natija);
+
+// let vaqt = setTimeout(function(fname){
+//   console.log('hello world', fname);
+// },1000, 'Bob')
+
+// let natija = setTimeout((fname) => {
+//   console.log('hello', fname);
+// },1000, 'Bob')
+
+// function fName(ism, age, jobs){
+//   return ism, age, jobs
+// }
+
+// fName()
+// let natija = setTimeout(fName, 1000, 'Shaxzodbek', 21, 'Dasturchi')
+// console.log(natija);
+
+let 
