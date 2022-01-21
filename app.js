@@ -1722,6 +1722,7 @@ let user = {
   age: 22
 }
 
-let jsonUser = JSON.stringify(user)
-console.log(jsonUser);
+let user2 = Object.assign({}, user)
+user2.fName = 'Bobur'
 console.log(user);
+console.log(user2);
