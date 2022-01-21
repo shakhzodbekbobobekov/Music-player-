@@ -1663,11 +1663,65 @@
 // },1000, 'Bob')
 
 // function fName(ism, age, jobs){
-//   return ism, age, jobs
+//  console.log('Salom ',  ism,  age, jobs);
 // }
 
-// fName()
-// let natija = setTimeout(fName, 1000, 'Shaxzodbek', 21, 'Dasturchi')
+
+// const sayHello = setTimeout(fName('Jon', 21, 'Programm'), 1000)
+
+// let a = 3;
+// let b = 4;
+// a = a + b; // 3+4
+// b = a - b; // 7 - 4
+// a = a - b; //7-3 
+
+
+
+// console.log(a);
+// console.log(b);
+
+// let yosh = 14;
+// let kirshYosh = 18
+// let natija =  ( yosh >= kirshYosh ) ? 'Ruhsat' : 'Uzr lekin mumkin emasti'
 // console.log(natija);
 
-let 
+// let kun = 8;
+// switch (kun) {
+//   case 1:
+//     console.log('Dushanba');
+//     break;
+
+//     case 2:
+//       console.log('Seshanba');
+//       break;
+
+//       case 3:
+//     console.log('chorshanba');
+//     break;
+
+//   default:
+//     console.log("bunaqa kun yuq afsuski !");
+//     break;
+// }
+
+// let users = {
+//   fName: 'Shaxzodbek',
+//   age: 22,
+//   contuary: 'Samarqand'
+// }
+
+// // console.log(Object.keys(users));
+// for(let key in users ){
+//   console.log(key);
+// }
+
+//!JSON format
+
+let user = {
+  fName: 'Shaxzodbek',
+  age: 22
+}
+
+let jsonUser = JSON.stringify(user)
+console.log(jsonUser);
+console.log(user);
