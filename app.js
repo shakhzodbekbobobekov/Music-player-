@@ -1717,12 +1717,20 @@
 
 //!JSON format
 
-let user = {
-  fName: 'Shaxzodbek',
-  age: 22
-}
+// let user = {
+//   fName: 'Shaxzodbek',
+//   age: 22
+// }
 
-let user2 = Object.assign({}, user)
-user2.fName = 'Bobur'
-console.log(user);
-console.log(user2);
+// let user2 = Object.assign({}, user)
+// user2.fName = 'Bobur'
+// console.log(user);
+// console.log(user2);
+
+//! AJAX asinxrom kod
+
+console.log('First clg');
+setTimeout( () => {
+  console.log('Second clg');
+}, 3000 )
+console.log('Three clg');
