@@ -1727,10 +1727,123 @@
 // console.log(user);
 // console.log(user2);
 
-//! AJAX asinxrom kod
+//  AJAX asinxrom kod
+// let summa = 0
+// function showNumbers(limit) {
+//   for( let i=1; i<= limit; i++ ){
+//     ( i % 3 === 0 ) 
+//       console.log(i);
+//   }
+// }
 
-console.log('First clg');
-setTimeout( () => {
-  console.log('Second clg');
-}, 3000 )
-console.log('Three clg');
+// showNumbers(10)
+
+// let users = [
+//   {
+//     fName: 'SHaxzod',
+//     age: 21
+//   },
+//   {
+//     fName: 'Alibek',
+//     age: 22
+//   },
+//   {
+//     fName: 'Valibek',
+//     age: 23
+//   }
+// ]
+
+// for( let user of users ){
+//   console.log(user);
+//   for( let key in user ){
+//     console.log(key, user[key]);
+//   }
+// }
+
+
+// function hello( fName, age ) {
+//   return this.fName = fName;
+//   return this.age = age
+// }
+
+// console.log(hello('shaxzod', 312));
+
+// let box = {
+//   razmer: 21,
+//   fName: 'kvadrat',
+//   hajmi: 'Katta'
+// }
+// console.log( 'razmer' in box );
+
+
+// for( let key in user ){
+  //   console.log(key, user[key]);
+  // }
+  // let result = Object.keys(user)
+  // console.log(result);  //array da olish usuli 😁
+  
+  // let result2 = Object.values(user)
+  // console.log(result2);
+  // console.log(result, result2);
+  
+//   let user = {
+//     fName: 'Shaxzodbek',
+//     age: 22,
+//     isMarride: "no 😥",
+//     darajasi: {
+//       talaba: '2- kurs',
+//       yunalish: 'uqituvchi',
+//       qoldi: 2
+//     }
+//   }
+
+// let result = Object.assign( {}, user )
+// let inResult = Object.assign( {}, result.darajasi )
+// result.darajasi.qoldi = '5yil'
+// result.darajasi.yunalish = 'gayi'
+// console.log('copy', result);
+// console.log('uzi', user);
+
+// console.log(Math.PI);
+// let randomNum = []
+// for( let i=8; i<=10; i++ ){
+//   let hisoblash = Math.round(Math.random() * i)
+//   randomNum.push(hisoblash)
+// }
+
+// console.log(randomNum);
+
+// let names = 'Samarqand'
+// let result = names.slice(0,5)
+// console.log(result);
+// let summa = 0
+// let numbers = [1, 2, 3, 4, 5,6,1, 2, 3, 4, 5,6,1, 2, 3, 4, 5,6]
+// for( let number of numbers ){
+//   summa+= number
+// }
+// console.log(summa);
+
+// let numbers = 'salom-xayr-kurishguncha-paka-paka'
+// let joinNumber = numbers.split('-')
+// console.log(joinNumber);
+
+// let vocublary = ['apple', 'banana', 'watermelon', 'melon']
+// let result = vocublary.join()
+// console.log(result);
+
+// let myText = "bir1-ikki1-uch1-turt1-besh1"
+// let result = myText.split('1')
+// console.log(result);
+
+
+function kunuzMaqola(maqola){
+  let words = maqola.split(' ')
+  console.log(words);
+
+  let id = words.join('-').toLowerCase()
+  console.log(id);
+}
+
+kunuzMaqola(
+  'IShID jangarilari qamoqdan qochishi ortidan Suriyada janglar boshlanib ketdi'
+)
