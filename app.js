@@ -1856,18 +1856,29 @@
 // const boxs = document.querySelector('.box')
 
 
-const fatherUl = document.querySelector('.father')
-const secondChild = fatherUl.children[1]
-const newItem = document.createElement('li')
+// const fatherUl = document.querySelector('.father')
+// const secondChild = fatherUl.children[1]
+// const newItem = document.createElement('li')
 
-newItem.setAttribute('class', 'newLi')
-newItem.innerText = 'Telifon'
-fatherUl.appendChild(newItem)
-fatherUl.replaceChild(newItem, secondChild)
-// concat
-
-
+// newItem.setAttribute('class', 'newLi')
+// newItem.innerText = 'Telifon'
+// fatherUl.appendChild(newItem)
+// fatherUl.replaceChild(newItem, secondChild)
+// // concat
 
 
+const container = document.querySelector('.container')
+const box = document.querySelector('.box')
 
+//new item
+const newItem = document.createElement('div')
+newItem.setAttribute('class', 'box')
+container.append(newItem)
+newItem.classList.add('square')
 
+//in newItem
+
+const inNewItem = document.createElement('div')
+inNewItem.setAttribute('class', 'newItemClass')
+inNewItem.textContent = 'sticer✌'
+newItem.append(inNewItem)
