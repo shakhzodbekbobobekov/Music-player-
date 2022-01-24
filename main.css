@@ -4,12 +4,17 @@
     box-sizing: border-box;
 }
 
-:root{
-    --txt-Bgcolor: #ccc ;
-    --font-size: 30px;
-}
-
-.box {
+ul {
     width: 200px;
     height: 200px;
+    border: 1px dotted green;
+    margin: 5rem;
+    padding: 2rem 3rem;
+}
+
+.newLi {
+    display: inline;
+    background-color: rgb(1, 12, 12);
+    color: #fff;
+    
 }

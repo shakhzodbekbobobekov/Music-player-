@@ -1836,14 +1836,38 @@
 // console.log(result);
 
 
-function kunuzMaqola(maqola){
-  let words = maqola.split(' ')
-  console.log(words);
+// function kunuzMaqola(maqola){
+//   let words = maqola.split(' ')
+//   console.log(words);
 
-  let id = words.join('-').toLowerCase()
-  console.log(id);
-}
+//   let id = words.join('-').toLowerCase()
+//   console.log(id);
+// }
 
-kunuzMaqola(
-  'IShID jangarilari qamoqdan qochishi ortidan Suriyada janglar boshlanib ketdi'
-)
+// kunuzMaqola(
+//   'IShID jangarilari qamoqdan qochishi ortidan Suriyada janglar boshlanib ketdi'
+// )
+
+// let text = 'hip';
+// let amal1 = text.slice(0, text.length-2)
+// // console.log(amal1);
+// let amal2 = text.slice(text.length-2, text.length)
+// console.log(`${amal2}${amal1}`);
+// const boxs = document.querySelector('.box')
+
+
+const fatherUl = document.querySelector('.father')
+const secondChild = fatherUl.children[1]
+const newItem = document.createElement('li')
+
+newItem.setAttribute('class', 'newLi')
+newItem.innerText = 'Telifon'
+fatherUl.appendChild(newItem)
+fatherUl.replaceChild(newItem, secondChild)
+// concat
+
+
+
+
+
+
