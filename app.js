@@ -1883,7 +1883,7 @@
 // inNewItem.textContent = 'sticer✌'
 // newItem.append(inNewItem)
 
-let isCarMarketOpen = false;
+let isCarMarketOpen = true;
 
 let newCar = new Promise( function (resolve, reject){
   setTimeout(() => {
@@ -1899,3 +1899,7 @@ let newCar = new Promise( function (resolve, reject){
     }
   }, 1000)
 } )
+
+newCar.then((result) => {
+  console.log(result);
+})
