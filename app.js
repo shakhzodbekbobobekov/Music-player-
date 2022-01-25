@@ -1883,27 +1883,31 @@
 // inNewItem.textContent = 'sticer✌'
 // newItem.append(inNewItem)
 
-let isCarMarketOpen = false;
+// let isCarMarketOpen = false;
 
-let newCar = new Promise( function (resolve, reject){
-  setTimeout(() => {
-    if(isCarMarketOpen){
-      let car = {
-        title: 'Gentra',
-        color: 'Mokriy',
-      };
-      console.log(resolve(car));;
-    } else {
-      let reason = new Error('Uzr Market yopiq ekan!😒')
-      reject(reason)
-    }
-  }, 1000)
-} )
+// let newCar = new Promise( function (resolve, reject){
+//   setTimeout(() => {
+//     if(isCarMarketOpen){
+//       let car = {
+//         title: 'Gentra',
+//         color: 'Mokriy',
+//       };
+//       console.log(resolve(car));;
+//     } else {
+//       let reason = new Error('Uzr Market yopiq ekan!😒')
+//       reject(reason)
+//     }
+//   }, 1000)
+// } )
 
-newCar
-.then((result) => {
-  console.log(result);
-})
-.catch((error) => {
-  console.log(error);
-})
+// newCar
+// .then((result) => {
+//   console.log(result);
+// })
+// .catch((error) => {
+//   console.log(error);
+// })
+
+fetch('https://api.adviceslip.com/advice')
+.then((result) => result.json())
+.then((data) => data.slip.advice)
