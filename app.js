@@ -1923,33 +1923,56 @@
   //   addNumber.innerText = ++summa
   // } )
   
-  const body = document.querySelector('body')
-  const wrapper = document.querySelector('#wrapper')
-  const item = document.querySelectorAll('#item')
-  const box = document.querySelector('.box')
-  const span = document.querySelector('span')
-  const hidden = document.querySelector('.hidden')
+  // const body = document.querySelector('body')
+  // const wrapper = document.querySelector('#wrapper')
+  // const item = document.querySelectorAll('#item')
+  // const box = document.querySelector('.box')
+  // const span = document.querySelector('span')
+  // const hidden = document.querySelector('.hidden')
   
-  item.forEach(element => {
-    element.addEventListener('click', () => {
-      box.style.display = 'block'
-      hidden.style.display = 'block'
-    })
-  })
+  // item.forEach(element => {
+  //   element.addEventListener('click', () => {
+  //     box.style.display = 'block'
+  //     hidden.style.display = 'block'
+  //   })
+  // })
   
-  box.addEventListener('click', () => {
-    box.style.display = 'none'
-    hidden.style.display = 'none'
-  })
+  // box.addEventListener('click', () => {
+  //   box.style.display = 'none'
+  //   hidden.style.display = 'none'
+  // })
   
-  span.addEventListener('click', () => {
-    box.style.display = 'none'
-    hidden.style.display = 'none'
-  })
+  // span.addEventListener('click', () => {
+  //   box.style.display = 'none'
+  //   hidden.style.display = 'none'
+  // })
   
-  addEventListener('keyup', (e) => {
-    if(e.key === "Escape") {
-      box.style.display = 'none'
-      hidden.style.display = 'none'
-    }
-  })
+  // addEventListener('keyup', (e) => {
+  //   if(e.key === "Escape") {
+  //     box.style.display = 'none'
+  //     hidden.style.display = 'none'
+  //   }
+  // })
+
+  const todoList = document.querySelector('.todo-list')
+  const title = document.querySelector('.title')
+  const todoNr = document.querySelector('.todo-nr')
+  const btn1 = document.querySelector('.btn1')
+  const btn2 = document.querySelector('.btn2')
+
+  let summa = 0
+  
+  btn1.addEventListener( 'click', addItem)
+  btn2.addEventListener('click', removeItem)  
+
+function addItem() {
+  const newItem = document.createElement('li')
+    newItem.classList.add('newClass')
+    newItem.innerText = `Item ${++summa}`
+    todoList.append(newItem)
+
+}
+
+function removeItem(e) {
+  console.log(e.target);
+}
