@@ -1954,25 +1954,65 @@
   //   }
   // })
 
-  const todoList = document.querySelector('.todo-list')
-  const title = document.querySelector('.title')
-  const todoNr = document.querySelector('.todo-nr')
-  const btn1 = document.querySelector('.btn1')
-  const btn2 = document.querySelector('.btn2')
+//   const todoList = document.querySelector('.todo-list')
+//   const title = document.querySelector('.title')
+//   const todoNr = document.querySelector('.todo-nr')
+//   const btn1 = document.querySelector('.btn1')
+//   const btn2 = document.querySelector('.btn2')
 
-  let summa = 0
+//   let summa = 0
   
-  btn1.addEventListener( 'click', addItem)
-  btn2.addEventListener('click', removeItem)  
+//   btn1.addEventListener( 'click', addItem)
+//   btn2.addEventListener('click', removeItem)  
 
-function addItem() {
-  const newItem = document.createElement('li')
-    newItem.classList.add('newClass')
-    newItem.innerText = `Item ${++summa}`
-    todoList.append(newItem)
+// function addItem() {
+//   const newItem = document.createElement('li')
+//     newItem.classList.add('newClass')
+//     newItem.innerText = `Item ${++summa}`
+//     todoList.append(newItem)
 
+// }
+
+// function removeItem(e) {
+//   console.log(e.target);
+// }
+
+// let cars = ['malibu', 'captiva', 'nexia']
+
+// cars.forEach( (car, indeeex) => {
+//   console.log(car, );
+// } )
+
+// let kinolar = [
+//   'bir ikki',
+//   'bir ikki uch',
+//   'bir ikki uch turt',
+//   'bir ikki uch turt besh',
+// ]
+
+// const searchKino = kinolar.filter(kino => {
+//   return kino.includes('uch')
+// })
+
+// // console.log(searchKino);
+
+// searchKino.forEach(item => {
+//   console.log(item.length);
+// })
+
+// let user = {
+//   fName: 'Shaxzodbek',
+//   age: 22,
+// }
+
+// this.user.car = 'sa'
+// console.log(user);
+
+let user = {
+  fName: 'Shaxzodbek',
+  age: 22,
 }
 
-function removeItem(e) {
-  console.log(e.target);
-}
+let user1 = {}
+Object.setPrototypeOf( user1, user )
+console.log(user1.fName);
