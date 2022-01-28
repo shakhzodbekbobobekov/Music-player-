@@ -2008,11 +2008,17 @@
 // this.user.car = 'sa'
 // console.log(user);
 
-let user = {
-  fName: 'Shaxzodbek',
-  age: 22,
+// let user = {
+//   fName: 'Shaxzodbek',
+//   age: 22,
+// }
+
+// let directionUser = Object.create(user)
+
+// console.log(directionUser.age);
+let i = 0
+function infinetLoop() {
+  console.log(i++);
 }
 
-let directionUser = Object.create(user)
-
-console.log(directionUser.age);
+setInteral( infinetLoop, 1000)
