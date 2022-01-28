@@ -2013,6 +2013,6 @@ let user = {
   age: 22,
 }
 
-let user1 = {}
-Object.setPrototypeOf( user1, user )
-console.log(user1.fName);
+let directionUser = Object.create(user)
+
+console.log(directionUser.age);
