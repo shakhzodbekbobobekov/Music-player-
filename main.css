@@ -1,32 +1,24 @@
-
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: monospace;
-    margin: 10px;
 }
 
-.btn1 {
-    background-color: green;
-    cursor: pointer;
-    margin: 10px;
-    border: none;
-    padding: 10px 15px;
-    color: aliceblue;
+body {
+    margin: 50px;
 }
 
-.btn2 {
-    background-color: crimson;
-    cursor: pointer;
+.btn {
     margin: 10px;
     border: none;
-    padding: 10px 15px;
-    color: aliceblue;
+    padding: 5px;
+    background-color: #909099;
+    color: #fff;
+    border-radius: 5px;
 }
 
-.newClass {
-    color: blue;
-    font-size: 20px;
+.btn:hover {
+    background-color: #545455;
+    cursor: pointer;
 }

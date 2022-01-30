@@ -2016,9 +2016,37 @@
 // let directionUser = Object.create(user)
 
 // console.log(directionUser.age);
-let i = 0
-function infinetLoop() {
-  console.log(i++);
+// let i = 0
+// function infinetLoop() {
+//   console.log(i++);
+// }
+
+// setInteral( infinetLoop, 1000)
+
+// let cars = [ 'Malibu', 'Gentra', 'Cobalt' ]
+// let i=0
+// cars.forEach(car => {
+//   console.log(i++, car);
+// })
+const todoList = document.querySelector('.todo-list')
+const btn = document.querySelector('.btn')
+let startNumber = 1
+
+
+btn.addEventListener( 'click', addItem)
+
+//Function
+
+function addItem() {
+  const newItem = document.createElement('li')
+  newItem.innerHTML = `Item ${startNumber++ }`
+  todoList.append(newItem)
+
+ newItem.addEventListener('click', deleteItem) 
 }
 
-setInteral( infinetLoop, 1000)
+function deleteItem(e){
+  const narsa = e.target
+  narsa.remove()
+}
+
