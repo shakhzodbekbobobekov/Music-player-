@@ -2028,25 +2028,65 @@
 // cars.forEach(car => {
 //   console.log(i++, car);
 // })
-const todoList = document.querySelector('.todo-list')
-const btn = document.querySelector('.btn')
-let startNumber = 1
+// const todoList = document.querySelector('.todo-list')
+// const btn = document.querySelector('.btn')
+// let startNumber = 1
 
 
-btn.addEventListener( 'click', addItem)
+// btn.addEventListener( 'click', addItem)
 
-//Function
+// //Function
 
-function addItem() {
-  const newItem = document.createElement('li')
-  newItem.innerHTML = `Item ${startNumber++ }`
-  todoList.append(newItem)
+// function addItem() {
+//   const newItem = document.createElement('li')
+//   newItem.innerHTML = `Item ${startNumber++ }`
+//   todoList.append(newItem)
 
- newItem.addEventListener('click', deleteItem) 
+//  newItem.addEventListener('click', deleteItem) 
+// }
+
+// function deleteItem(e){
+//   const narsa = e.target
+//   narsa.remove()
+// }
+
+
+
+
+// let limit = 50
+// summa.innerText = limit
+
+// text.addEventListener('input', function() {
+//   let textLength = text.value.length
+//   summa.innerText = textLength
+// })
+
+// const text = document.getElementById('text')
+// const summa = document.querySelector('.summa')
+
+// let limit = 50
+// summa.innerHTML = 0 + '/' + limit
+
+// text.addEventListener('input', function() {
+//   let textLength = text.value.length
+//   summa.innerHTML = textLength + '/' + limit
+// })
+
+// function hello( area, color, shope ){
+//   const helloParametr = {
+//     area: area,
+//     color: color,
+//     shope: shope,
+//   }
+//   return helloParametr;
+// }
+
+// const javohirHome = hello('Samarkand', 'black', 'circle')
+// console.log(javohirHome);
+
+function constsFunc(names, ages) {    
+      this.names= names;
+      this.ages= ages
 }
-
-function deleteItem(e){
-  const narsa = e.target
-  narsa.remove()
-}
-
+let natija = new constsFunc('Shaxzodbek', 22)
+console.log(natija);
