@@ -2091,14 +2091,27 @@
 // let natija = new constsFunc('Shaxzodbek', 22)
 // console.log(natija);
 
-function home( title, color, map ) {
-  const returnHome = {
-    title,
-    color,
-    map
+// function home( title, color, map ) {
+//   const returnHome = {
+//     title,
+//     color,
+//     map
+//   }
+//     return returnHome;
+// }
+
+// let javohirHome = home( 'Katta', 'black', 'Samarqand' )
+// console.log(javohirHome);
+
+class Person {
+  names;
+  age;
+
+  constructor( namesPar, agePar ){
+    this.names = namesPar;
+    this.age = agePar;
   }
-    return returnHome;
 }
 
-let javohirHome = home( 'Katta', 'black', 'Samarqand' )
-console.log(javohirHome);
+const person1 = new Person( 'Shaxzodbek', 22 )
+console.log(person1);
