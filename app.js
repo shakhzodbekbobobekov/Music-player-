@@ -2084,9 +2084,21 @@
 // const javohirHome = hello('Samarkand', 'black', 'circle')
 // console.log(javohirHome);
 
-function constsFunc(names, ages) {    
-      this.names= names;
-      this.ages= ages
+// function constsFunc(names, ages) {    
+//       this.names= names;
+//       this.ages= ages
+// }
+// let natija = new constsFunc('Shaxzodbek', 22)
+// console.log(natija);
+
+function home( title, color, map ) {
+  const returnHome = {
+    title,
+    color,
+    map
+  }
+    return returnHome;
 }
-let natija = new constsFunc('Shaxzodbek', 22)
-console.log(natija);
+
+let javohirHome = home( 'Katta', 'black', 'Samarqand' )
+console.log(javohirHome);
