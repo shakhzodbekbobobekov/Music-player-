@@ -2138,18 +2138,24 @@
 // console.log(result.narxi);
 // console.log(result.shahar);
 
-class Person {
-  constructor(names, family) {
-    this.names = names;
-    this.family = family;    
-  }
-}
-class Baby extends Person{
-  constructor(names, family, age) {
-    super(names, family)
-    this.age = age;
-  }
+// class Person {
+//   constructor(names, family) {
+//     this.names = names;
+//     this.family = family;    
+//   }
+// }
+// class Baby extends Person{
+//   constructor(names, family, age) {
+//     super(names, family)
+//     this.age = age;
+//   }
+// }
+
+// let result = new Baby('Sarvi', 'Toshkent', 1)
+// console.log(result);
+
+function getDate( fName, lName, ...lang ){
+  console.log( `Name: ${fName}, Lastname: ${lName}, Languasges: ${lang}` );
 }
 
-let result = new Baby('Sarvi', 'Toshkent', 1)
-console.log(result);
+getDate('shaxzodbek', 'bobobekov', 'English', 'Uzbek')
