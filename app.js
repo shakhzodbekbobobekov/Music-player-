@@ -2103,15 +2103,47 @@
 // let javohirHome = home( 'Katta', 'black', 'Samarqand' )
 // console.log(javohirHome);
 
-class Person {
-  names;
-  age;
+// class Person {
+//   names;
+//   age;
 
-  constructor( namesPar, agePar ){
+//   constructor( namesPar, agePar ){
+//     this.names = namesPar;
+//     this.age = agePar;
+//   }
+// }
+
+// const person1 = new Person( 'Shaxzodbek', 22 )
+// console.log(person1);
+
+// function home( shahar, olchami, narxi ){
+//     const homeDate = {
+//       shahar: shahar,
+//       olchami: olchami,
+//       narxi: narxi,
+//     };
+//     return homeDate
+// }
+
+// let result = home( 'Samarqand', 'katta va shinam', '200$' )
+// console.log(result);
+
+// function home( shahar, olchami, narxi ) {
+//   this.shahar = shahar;
+//   this.olchami = olchami;
+//   this.narxi = narxi;
+// }
+
+// let result = new home( 'Toshkent', 'katta va shinam', '350$' )
+// console.log(result.narxi);
+// console.log(result.shahar);
+
+class Person {
+  constructor(namesPar, agePar) {
     this.names = namesPar;
-    this.age = agePar;
+    this.age = agePar;    
   }
 }
 
-const person1 = new Person( 'Shaxzodbek', 22 )
-console.log(person1);
+let result = new Person( 'Shaxzodbek', 22 )
+console.log(result);
