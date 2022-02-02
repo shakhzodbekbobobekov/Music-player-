@@ -2139,11 +2139,17 @@
 // console.log(result.shahar);
 
 class Person {
-  constructor(namesPar, agePar) {
-    this.names = namesPar;
-    this.age = agePar;    
+  constructor(names, family) {
+    this.names = names;
+    this.family = family;    
+  }
+}
+class Baby extends Person{
+  constructor(names, family, age) {
+    super(names, family)
+    this.age = age;
   }
 }
 
-let result = new Person( 'Shaxzodbek', 22 )
+let result = new Baby('Sarvi', 'Toshkent', 1)
 console.log(result);
