@@ -2139,23 +2139,51 @@
 // console.log(result.shahar);
 
 // class Person {
-//   constructor(names, family) {
-//     this.names = names;
-//     this.family = family;    
+//   constructor(names, familay) {
+//       this.names = names;
+//       this.familay = familay;
 //   }
 // }
-// class Baby extends Person{
-//   constructor(names, family, age) {
-//     super(names, family)
+
+// class Baby extends Person {
+//   constructor(names, familay, age) {
+//     super(names, familay)
 //     this.age = age;
 //   }
 // }
 
-// let result = new Baby('Sarvi', 'Toshkent', 1)
+// let result = new Baby( 'sara', 'dsf', 1 )
 // console.log(result);
 
-function getDate( fName, lName, ...lang ){
-  console.log( `Name: ${fName}, Lastname: ${lName}, Languasges: ${lang}` );
+
+
+
+
+// class Person {
+//   constructor( fName, family ){
+//     this.fName = fName;
+//     this.family = family;
+//   }
+// }
+
+// class Baby extends Person {
+//   constructor(fName, family, age) {
+//     super (fName, family)
+//     this.age = age;
+//   }
+// }
+
+// const result = new Baby( 'Shaxzodbek', 'Bobobekov', 21 )
+// console.log(result);
+
+const result = {
+  fname: 'Shaxzodbek',
+  age: 22
 }
 
-getDate('shaxzodbek', 'bobobekov', 'English', 'Uzbek')
+const result2 = JSON.parse(JSON.stringify(result))
+result2.fname = 'Turabek'
+result2.age = 20
+console.log(result);
+console.log(result2);
+
