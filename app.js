@@ -2176,14 +2176,38 @@
 // const result = new Baby( 'Shaxzodbek', 'Bobobekov', 21 )
 // console.log(result);
 
-const result = {
-  fname: 'Shaxzodbek',
-  age: 22
-}
+// const result = {
+//   fname: 'Shaxzodbek',
+//   age: 22
+// }
 
-const result2 = JSON.parse(JSON.stringify(result))
-result2.fname = 'Turabek'
-result2.age = 20
-console.log(result);
-console.log(result2);
+// const result2 = JSON.parse(JSON.stringify(result))
+// result2.fname = 'Turabek'
+// result2.age = 20
+// console.log(result);
+// console.log(result2);
+
+let isCarMarketOpen = false
+
+let newCar = new Promise(function( resolve, reject ){
+setTimeout(() => {
+  if(isCarMarketOpen){
+    let car = {
+      title: 'Malibu',
+      color: 'Black',
+    };
+    resolve(car)
+  } else {
+    let reason = new Error('Market yopiq')
+    reject(reason)
+  }
+}, 1500)
+})
+
+.then((result) => {
+  console.log(result);
+}).catch((err) => {
+  console.log(err.message);
+});
+
 
