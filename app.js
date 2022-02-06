@@ -2239,42 +2239,61 @@
 
 
 
-const btn = document.querySelector('#btn')
-const body = document.querySelector('body')
-btn.addEventListener('click', () => {
+// const btn = document.querySelector('#btn')
+// const body = document.querySelector('body')
+// btn.addEventListener('click', () => {
 
-  // 
-  let colors = [  
-    '0',
-    '1',
-    '2',
-    '3',
-    '4',
-    '5',
-    '6',
-    '7',
-    '8',
-    '9',
-    'a',
-    'b',
-    'c',
-    'd',
-    'e',
-    'f'
-  ]
+//   // 
+//   let colors = [  
+//     '0',
+//     '1',
+//     '2',
+//     '3',
+//     '4',
+//     '5',
+//     '6',
+//     '7',
+//     '8',
+//     '9',
+//     'a',
+//     'b',
+//     'c',
+//     'd',
+//     'e',
+//     'f'
+//   ]
   
-  function randomColor() {
-    let natija = '#'
-    for( let i = 0; i < 6; i++ ) {
-      let random = Math.floor( Math.random() * colors.length )
-      natija += colors[random]
-    }
-      return natija
-  }
+//   function randomColor() {
+//     let natija = '#'
+//     for( let i = 0; i < 6; i++ ) {
+//       let random = Math.floor( Math.random() * colors.length )
+//       natija += colors[random]
+//     }
+//       return natija
+//   }
   
   
-  let randomColor1 = randomColor()
-  let randomColor2 = randomColor()
-  // 
-  body.style.background =  `linear-gradient( 120deg, ${randomColor1}, ${randomColor2} )` 
+//   let randomColor1 = randomColor()
+//   let randomColor2 = randomColor()
+//   // 
+//   body.style.background =  `linear-gradient( 120deg, ${randomColor1}, ${randomColor2} )` 
+// })
+
+const uch = document.querySelector('.uch')
+const doira = document.querySelector('.doira')
+
+window.addEventListener('mousemove', (e) => {
+  const x = e.clientX
+  const y = e.clientY
+
+  uch.style.top = `${y}px`
+  uch.style.left = `${x}px`
+})
+
+window.addEventListener('mousedown', (e) => {
+  const x = e.clientX
+  const y = e.clientY
+
+  doira.style.top = `${y}px`
+  doira.style.left = `${x}px`
 })
