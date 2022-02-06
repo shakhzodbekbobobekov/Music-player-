@@ -2237,47 +2237,44 @@
 //   return number
 // })
 
+
+
 const btn = document.querySelector('#btn')
 const body = document.querySelector('body')
-console.log(body);
-
-
-let colors = [  
-  '0',
-  '1',
-  '2',
-  '3',
-  '4',
-  '5',
-  '6',
-  '7',
-  '8',
-  '9',
-  'a',
-  'b',
-  'c',
-  'd',
-  'e',
-  'f'
-]
-
-function randomColor() {
-  let natija = '#'
-  for( let i = 0; i < 6; i++ ) {
-    let random = Math.floor( Math.random() * colors.length )
-    natija += colors[random]
-  }
-    return natija
-}
-
-
-let randomColor1 = randomColor()
-let randomColor2 = randomColor()
-console.log(randomColor1);
-console.log(randomColor2);
-
 btn.addEventListener('click', () => {
-  let abs = true
+
+  // 
+  let colors = [  
+    '0',
+    '1',
+    '2',
+    '3',
+    '4',
+    '5',
+    '6',
+    '7',
+    '8',
+    '9',
+    'a',
+    'b',
+    'c',
+    'd',
+    'e',
+    'f'
+  ]
+  
+  function randomColor() {
+    let natija = '#'
+    for( let i = 0; i < 6; i++ ) {
+      let random = Math.floor( Math.random() * colors.length )
+      natija += colors[random]
+    }
+      return natija
+  }
+  
+  
+  let randomColor1 = randomColor()
+  let randomColor2 = randomColor()
+  // 
   body.style.background =  `linear-gradient( 120deg, ${randomColor1}, ${randomColor2} )` 
-  abs = !abs
 })
