@@ -2187,27 +2187,53 @@
 // console.log(result);
 // console.log(result2);
 
-let isCarMarketOpen = false
+// let isCarMarketOpen = true
 
-let newCar = new Promise(function( resolve, reject ){
-setTimeout(() => {
-  if(isCarMarketOpen){
-    let car = {
-      title: 'Malibu',
-      color: 'Black',
-    };
-    resolve(car)
-  } else {
-    let reason = new Error('Market yopiq')
-    reject(reason)
-  }
-}, 1500)
-})
+// let newCar = new Promise(function( resolve, reject ){
+// setTimeout(() => {
+//   if(isCarMarketOpen){
+//     let car = {
+//       title: 'Malibu',
+//       color: 'Black',
+//     };
+//     resolve(car)
+//   } else {
+//     let reason = new Error('Market yopiq')
+//     reject(reason)
+//   }
+// }, 1500)
+// })
 
-.then((result) => {
-  console.log(result);
-}).catch((err) => {
-  console.log(err.message);
-});
+// .then((resulta) => {
+//   console.log(resulta);
+// }).catch((erra) => {
+//   console.log(erra.message);
+// });
 
+      
+// fetch("https://api.adviceslip.com/advice")
+//   .then((result) => result.json())
+//   .then((data) => console.log(data.slip.advice))
+
+// let mevalar = [ 'banan', 'peach', 'lemon', 'baliq', 'gush', 'tuxum' ];
+// let mevalar2 = Object.assign( {}, mevalar )
+// mevalar2[2] = 'apilsin'
+// console.log(mevalar);
+// console.log(mevalar2);
+
+// let numbers = [ 11, 3, 4, 5, 8, 5, 9, 11, 9, 11 ]
+// let natija = []
+// numbers.forEach((number) => {
+//   if( !natija.includes(number) )
+//     natija.push(number)
+//     return number
+// })
+
+// console.log(natija);
+
+// let numbers = [ 11, 3, 4, 5, 8, 5, 9, 11, 9, 11 ]
+
+// let mapping = numbers.map((number) => {
+//   return number
+// })
 

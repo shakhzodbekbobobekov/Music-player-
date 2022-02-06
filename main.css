@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,19 +6,18 @@
 }
 
 body {
-    margin: 50px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.btn {
-    margin: 10px;
+#btn {
     border: none;
-    padding: 5px;
-    background-color: #909099;
+    padding: 20px;
+    background-color: aqua;
     color: #fff;
-    border-radius: 5px;
-}
-
-.btn:hover {
-    background-color: #545455;
+    font-weight: 900;
     cursor: pointer;
+    border-radius: 10px;
 }
