@@ -2310,16 +2310,32 @@
 //     }
 //   }
 // })
-let summa = 0
+// let summa = 0
 
-document.addEventListener('click', (e) => {
-  if( e.isTrusted = 'true' ){
-    summa++;
+// document.addEventListener('click', (e) => {
+//   if( e.isTrusted = 'true' ){
+//     summa++;
     
-    if(summa == '2') {
-      console.log(`${summa} aka uji 2 marta bosib buldiz`);
-      
-      summa = 0;
-    }
-  }
+//     if(summa == '2') {
+//       console.log(`${summa} aka uji 2 marta bosib buldiz`);
+
+//       summa = 0;
+//     }
+//   }
+// })
+
+// let arrys = ['olma', 'bexi', 'shaftoli', 'olcha']
+
+// let (bir, ikki, ..uch) = arrys
+// console.log((bir, ikki, ..uch));
+
+
+fetch('https://randomuser.me/api/?results=5')
+.then(function(data) {
+  return data.json()
 })
+.then(getUser)
+
+function getUser(userData) {
+  console.log(userData.results[3].cell);
+}
