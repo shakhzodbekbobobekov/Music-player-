@@ -2279,21 +2279,34 @@
 //   body.style.background =  `linear-gradient( 120deg, ${randomColor1}, ${randomColor2} )` 
 // })
 
-const uch = document.querySelector('.uch')
-const doira = document.querySelector('.doira')
+// const uch = document.querySelector('.uch')
+// const doira = document.querySelector('.doira')
 
-window.addEventListener('mousemove', (e) => {
-  const x = e.clientX
-  const y = e.clientY
+// window.addEventListener('mousemove', (e) => {
+//   const x = e.clientX
+//   const y = e.clientY
 
-  uch.style.top = `${y}px`
-  uch.style.left = `${x}px`
-})
+//   uch.style.top = `${y}px`
+//   uch.style.left = `${x}px`
+// })
 
-window.addEventListener('mousedown', (e) => {
-  const x = e.clientX
-  const y = e.clientY
+// window.addEventListener('mousedown', (e) => {
+//   const x = e.clientX
+//   const y = e.clientY
 
-  doira.style.top = `${y}px`
-  doira.style.left = `${x}px`
+//   doira.style.top = `${y}px`
+//   doira.style.left = `${x}px`
+// })
+
+let summa = 0
+document.addEventListener('keyup', function (e) {
+  if( e.key == "e" && e.keyCode == '69' ){
+    summa ++
+
+    if( summa == '2' ){
+      console.log(summa, 'Ikki marta bosildi');
+
+      summa = 0
+    }
+  }
 })
