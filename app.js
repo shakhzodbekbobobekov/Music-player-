@@ -2328,14 +2328,29 @@
 
 // let (bir, ikki, ..uch) = arrys
 // console.log((bir, ikki, ..uch));
+const input = document.querySelector('.input')
+const btn = document.querySelector('.btn')
+const parag = document.querySelector('.parag')
 
-
-fetch('https://randomuser.me/api/?results=5')
+fetch('https://random-word-api.herokuapp.com/word')
 .then(function(data) {
   return data.json()
 })
 .then(getUser)
 
 function getUser(userData) {
-  console.log(userData.results[3].cell);
+  parag.textContent = userData
+ btn.addEventListener('click', () => {
+  if( input.value == userData ){
+    console.log('uxshadi');
+  }else {
+    console.log('bulmadi');
+  }
+})
+
+!input
 }
+
+
+
+
