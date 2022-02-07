@@ -2343,12 +2343,10 @@ function getUser(userData) {
  btn.addEventListener('click', () => {
   if( input.value == userData ){
     console.log('uxshadi');
-  }else {
-    console.log('bulmadi');
   }
+  input.value = ''
 })
 
-!input
 }
 
 
