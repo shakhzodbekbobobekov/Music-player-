@@ -2298,15 +2298,28 @@
 //   doira.style.left = `${x}px`
 // })
 
+// let summa = 0
+// document.addEventListener('keyup', function (e) {
+//   if( e.key == "e" && e.keyCode == '69' ){
+//     summa ++
+
+//     if( summa == '2' ){
+//       console.log(summa, 'Ikki marta bosildi');
+
+//       summa = 0
+//     }
+//   }
+// })
 let summa = 0
-document.addEventListener('keyup', function (e) {
-  if( e.key == "e" && e.keyCode == '69' ){
-    summa ++
 
-    if( summa == '2' ){
-      console.log(summa, 'Ikki marta bosildi');
-
-      summa = 0
+document.addEventListener('click', (e) => {
+  if( e.isTrusted = 'true' ){
+    summa++;
+    
+    if(summa == '2') {
+      console.log(`${summa} aka uji 2 marta bosib buldiz`);
+      
+      summa = 0;
     }
   }
 })
