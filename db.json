@@ -1,0 +1,37 @@
+
+{
+    "trips": [
+      { 
+        "title": "bmw",
+        "price": "120",
+        "model": "M5" 
+      },
+      {
+        "title": "merc",
+        "price": "150",
+        "model": "C222" 
+      },
+      {
+        "title": "audio",
+        "price": "90",
+        "model": "a7" 
+      },
+      {
+        "title": "gm",
+        "price": "14",
+        "model": "gentra" 
+      }
+    ]
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

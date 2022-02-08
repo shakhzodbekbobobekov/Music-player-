@@ -2328,27 +2328,43 @@
 
 // let (bir, ikki, ..uch) = arrys
 // console.log((bir, ikki, ..uch));
-const input = document.querySelector('.input')
-const btn = document.querySelector('.btn')
-const parag = document.querySelector('.parag')
+// const input = document.querySelector('.input')
+// const btn = document.querySelector('.btn')
+// const parag = document.querySelector('.parag')
 
-fetch('https://random-word-api.herokuapp.com/word')
-.then(function(data) {
-  return data.json()
+// fetch('https://random-word-api.herokuapp.com/word')
+// .then(function(data) {
+//   return data.json()
+// })
+// .then(getUser)
+
+// function getUser(userData) {
+//   parag.textContent = userData
+//  btn.addEventListener('click', () => {
+//   if( input.value == userData ){
+//     console.log('uxshadi');
+//   }
+//   input.value = ''
+// })
+
+// }
+
+
+fetch(' http://localhost:3000/trips')
+.then((data) => {
+    return data.json()
 })
-.then(getUser)
+.then(getData)
 
-function getUser(userData) {
-  parag.textContent = userData
- btn.addEventListener('click', () => {
-  if( input.value == userData ){
-    console.log('uxshadi');
-  }
-  input.value = ''
-})
-
+function getData(getDataUser) {
+    getDataUser.forEach((user) => {
+        if(user.price > 15){
+            console.log(`Siz ${user.price}.000$ ga ${user.title} ning ${user.model} lini rostan ham olmoqchimisiz (sizda shuncha pul kupmi 🧐)`);
+        }else{
+            console.log(`Undan kura legendarniy kotta bollani gentrasini ${user.price}.000$ oling`);
+        }
+    });
 }
-
 
 
 
