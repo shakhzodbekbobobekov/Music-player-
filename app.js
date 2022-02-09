@@ -2350,21 +2350,28 @@
 // }
 
 
-fetch(' http://localhost:3000/trips')
-.then((data) => {
-    return data.json()
-})
-.then(getData)
+// fetch(' http://localhost:3000/trips')
+// .then((data) => {
+//     return data.json()
+// })
+// .then(getData)
 
-function getData(getDataUser) {
-    getDataUser.forEach((user) => {
-        if(user.price > 15){
-            console.log(`Siz ${user.price}.000$ ga ${user.title} ning ${user.model} lini rostan ham olmoqchimisiz (sizda shuncha pul kupmi 🧐)`);
-        }else{
-            console.log(`Undan kura legendarniy kotta bollani gentrasini ${user.price}.000$ oling`);
-        }
-    });
+// function getData(getDataUser) {
+//     getDataUser.forEach((user) => {
+//         if(user.price > 15){
+//             console.log(`Siz ${user.price}.000$ ga ${user.title} ning ${user.model} lini rostan ham olmoqchimisiz (sizda shuncha pul kupmi 🧐)`);
+//         }else{
+//             console.log(`Undan kura legendarniy kotta bollani gentrasini ${user.price}.000$ oling`);
+//         }
+//     });
+// }
+
+const api = 'https://random-word-api.herokuapp.com/word?number=10';
+
+async function requestApi(url) {
+  const requst = await fetch(url);
+  const data = await requst.json();
+  console.log(data);
 }
 
-
-
+requestApi(api)
