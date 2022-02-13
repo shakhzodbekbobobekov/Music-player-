@@ -2366,12 +2366,76 @@
 //     });
 // }
 
-const api = 'https://random-word-api.herokuapp.com/word?number=10';
+// const api = 'https://random-word-api.herokuapp.com/word?number=10';
 
-async function requestApi(url) {
-  const requst = await fetch(url);
-  const data = await requst.json();
-  console.log(data);
-}
+// let info = 'Loading';
+// let done = 'Done'
 
-requestApi(api)
+// async function requestApi(url) {
+//   console.log(info);
+
+//   const requst = await fetch(url);
+//   const data = await requst.json();
+//   console.log(data);
+
+//   console.log(done);
+// }
+
+// requestApi(api)
+
+// const api = 'https://restcountries.com/v3.1/all';
+
+// let info = ''
+//   async function apii(url) {
+//     info = 'Loading'
+//     try{
+//       const fetchUrl = await fetch(url)
+//       const fetchJson = await fetchUrl.json();
+//       console.log(fetchJson);
+//       info = ''        
+//     }catch(err) {
+//       console.log(err.massage);
+//     }
+//   }
+
+  // apii(api)
+
+  // fetch(api)
+  // .then((data) => {
+  //   return data.json();
+  // })
+  // .then(showModal)
+
+  // function showModal(data) {
+  //   let allCountry = data
+
+  //   allCountry.forEach(element => {
+  //     const div = document.createElement('div');
+  //     div.classList.add('card-body')
+  //     div.textContent = `${element.name.common}`
+  //     console.log(element.name.common);
+
+  //     document.querySelector('.card').append(div)
+  //   })
+  // }
+
+  let isBooksShopOpen = false;
+
+  let willGetNewBook = new Promise(
+    function(resolve, reject){
+      if(isBooksShopOpen){
+        let book = {
+          title: 'Baxtiyor oila',
+          author: 'Shayx Muhammad Sodiq Muhammad Yusuf'
+        }
+        resolve(book)  //fulfild
+      } else {
+        let result = new Error('Ming bor uzr kitob dukon yopiq :( ')
+        reject(result)
+      }
+    }
+  )
+
+  willGetNewBook
+    .then(result => console.log(result))
+    .catch( error => console.log(error.message))
