@@ -2419,23 +2419,35 @@
   //   })
   // }
 
-  let isBooksShopOpen = false;
+  // let isBooksShopOpen = true;
 
-  let willGetNewBook = new Promise(
-    function(resolve, reject){
-      if(isBooksShopOpen){
-        let book = {
-          title: 'Baxtiyor oila',
-          author: 'Shayx Muhammad Sodiq Muhammad Yusuf'
-        }
-        resolve(book)  //fulfild
-      } else {
-        let result = new Error('Ming bor uzr kitob dukon yopiq :( ')
-        reject(result)
-      }
-    }
-  )
+  // let willGetNewBook = new Promise(
+  //   function(resolve, reject){
+  //     if(isBooksShopOpen){
+  //       let book = {
+  //         title: 'Baxtiyor oila',
+  //         author: 'Shayx Muhammad Sodiq Muhammad Yusuf'
+  //       }
+  //       resolve(book)  //fulfild
+  //     } else {
+  //       let result = new Error('Ming bor uzr kitob dukon yopiq :( ')
+  //       reject(result)
+  //     }
+  //   }
+  // )
 
-  willGetNewBook
-    .then(result => console.log(result))
-    .catch( error => console.log(error.message))
+  // willGetNewBook
+  //   .then(result => console.log(result))
+  //   .catch( error => console.log(error.message))
+
+
+function add( a, b, callback ){
+  console.log(`${a} + ${b} larning yig'indisi shul`);
+  callback()
+}
+
+function display() {
+  console.log(`Bu qator qushuvdan keyin chiqadi xay :)`);
+}
+
+add( 3, 4, display )
