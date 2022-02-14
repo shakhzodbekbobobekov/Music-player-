@@ -2477,28 +2477,62 @@
   //   console.log(item);
   // }
 
-  let array = [
-    {
-      names: 'bmw',
-      price: '50.000$',
-      model: 'm7'
-    },
-    {
-      names: 'bmw',
-      price: '120.000$',
-      model: 'm20'
-    },
-    {
-      names: 'amg',
-      price: '300.000$',
-      model: 'gelik'
-    }
-  ]
+//   let array = [
+//     {
+//       names: 'bmw',
+//       price: '50.000$',
+//       model: 'm7'
+//     },
+//     {
+//       names: 'bmw',
+//       price: '120.000$',
+//       model: 'm20'
+//     },
+//     {
+//       names: 'amg',
+//       price: '300.000$',
+//       model: 'gelik'
+//     }
+//   ]
 
-for( let itemArray of array ){
-  console.log(itemArray);
-  console.log('*/*/*/');
-  for( let itemArrayIn in itemArray ){
-    console.log(itemArrayIn, ":", itemArray[itemArrayIn]);
+// for( let itemArray of array ){
+//   console.log(itemArray);
+//   console.log('*/*/*/');
+//   for( let itemArrayIn in itemArray ){
+//     console.log(itemArrayIn, ":", itemArray[itemArrayIn]);
+//   }
+// }
+
+let user = {
+  names: 'Shaxzodbek',
+  firstName: 'Bobobekov',
+  job: 'student😎',
+  address: {
+    city: 'Kattakurgan',
+    street: 'Chaman 11'
   }
 }
+//clone one
+let clone1 = {...user}
+clone1.names = 'Muhammadjon';
+clone1.firstName = 'Bobobekov';
+clone1.job = 'reader 🥰';
+//* clone in (ichma ich)
+clone1.address = {...user.address}
+clone1.address.city = 'AQSH'
+clone1.address.street = 'New York'
+//*
+//clone one
+console.log(user);
+console.log(clone1);
+
+//! clone two
+let clone2 = {...user};
+clone2.names = 'MuhammadAyub';
+clone2.firstName = 'Bobobekov';
+clone2.job = 'baby🥰';
+//! clone two
+
+console.log(user);
+console.log(clone1);
+console.log(clone2);
