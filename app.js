@@ -2441,13 +2441,64 @@
   //   .catch( error => console.log(error.message))
 
 
-function add( a, b, callback ){
-  console.log(`${a} + ${b} larning yig'indisi shul`);
-  callback()
-}
+// function add( a, b, callback ){
+//   console.log(`${a} + ${b} larning yig'indisi shul`);
+//   callback()
+// }
 
-function display() {
-  console.log(`Bu qator qushuvdan keyin chiqadi xay :)`);
-}
+// function callback() {
+//   console.log(`Bu qator qushuvdan keyin chiqadi xay :)`);
+// }
 
-add( 3, 4, display )
+// add( 3, 4, callback )
+
+// let names = false
+// console.log(names);
+
+// console.log(
+//   false && true || true || false
+// );
+
+// for( let i=0; i<= myArray.length; i++) {
+//   console.log(i);
+// // }
+
+// let i=0
+// while(i <= myArray.length){
+  //   console.log(myArray[i]);
+  //   // i++;
+  // }
+
+
+  // let myArray = [10,25,3,4,5,67,7,87,90]
+// console.log(typeof myArray[2]);                                              
+
+  // for( let item of myArray ){
+  //   console.log(item);
+  // }
+
+  let array = [
+    {
+      names: 'bmw',
+      price: '50.000$',
+      model: 'm7'
+    },
+    {
+      names: 'bmw',
+      price: '120.000$',
+      model: 'm20'
+    },
+    {
+      names: 'amg',
+      price: '300.000$',
+      model: 'gelik'
+    }
+  ]
+
+for( let itemArray of array ){
+  console.log(itemArray);
+  console.log('*/*/*/');
+  for( let itemArrayIn in itemArray ){
+    console.log(itemArrayIn, ":", itemArray[itemArrayIn]);
+  }
+}
