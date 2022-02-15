@@ -2503,36 +2503,87 @@
 //   }
 // }
 
-let user = {
-  names: 'Shaxzodbek',
-  firstName: 'Bobobekov',
-  job: 'student😎',
-  address: {
-    city: 'Kattakurgan',
-    street: 'Chaman 11'
-  }
-}
-//clone one
-let clone1 = {...user}
-clone1.names = 'Muhammadjon';
-clone1.firstName = 'Bobobekov';
-clone1.job = 'reader 🥰';
-//* clone in (ichma ich)
-clone1.address = {...user.address}
-clone1.address.city = 'AQSH'
-clone1.address.street = 'New York'
-//*
-//clone one
-console.log(user);
-console.log(clone1);
+// let user = {
+//   names: 'Shaxzodbek',
+//   firstName: 'Bobobekov',
+//   job: 'student😎',
+//   address: {
+//     city: 'Kattakurgan',
+//     street: 'Chaman 11'
+//   }
+// }
+// //clone one
+// let clone1 = {...user}
+// clone1.names = 'Muhammadjon';
+// clone1.firstName = 'Bobobekov';
+// clone1.job = 'reader 🥰';
+// //* clone in (ichma ich)
+// clone1.address = {...user.address}
+// clone1.address.city = 'AQSH'
+// clone1.address.street = 'New York'
+// //*
+// //clone one
+// console.log(user);
+// console.log(clone1);
 
-//! clone two
-let clone2 = {...user};
-clone2.names = 'MuhammadAyub';
-clone2.firstName = 'Bobobekov';
-clone2.job = 'baby🥰';
-//! clone two
+// //! clone two
+// let clone2 = {...user};
+// clone2.names = 'MuhammadAyub';
+// clone2.firstName = 'Bobobekov';
+// clone2.job = 'baby🥰';
+// //! clone two
 
-console.log(user);
-console.log(clone1);
-console.log(clone2);
+// console.log(user);
+// console.log(clone1);
+// console.log(clone2);
+
+
+// let a = "hello";
+
+// console.log(a.charAt(0,2));
+
+
+// let arr =[ '1apple', '2lemon', '3waterlemon' ]
+// // arr.unshift('Salom')
+// arr.pop()
+// arr.shift()
+// console.log(arr);
+// let arr = [4,5,6]
+
+// function summa(arr) {
+//   let sum = 0
+//   for( let i=0; i<=arr.length; i++ ){
+//     return sum += arr[i]
+//   }
+//   console.log(sum);
+// }
+// console.log(summa(arr););
+
+// let user = {
+//   names: 'Shaxzodbek',
+//   age: 22,
+//   address: {
+//     city: 'Kattaqo`rg`on',
+//     home: 'Chaman utar 11',
+//   }
+// }
+
+// //clone 
+// let clone1 = {...user}
+// clone1.names = 'Bobur'
+// clone1.address = {...user.address}
+// clone1.address.city = 'Samarqand';
+// clone1.address.home = 'Shohi Zinda 10';
+// console.log(clone1);
+
+
+let myArray = [ 12, 16, 2000 ]
+let myArray1 = myArray
+//*clone
+myArray = [...myArray1]
+myArray1[0] = 14
+myArray1[1] = 01
+myArray1[2] = 2000
+
+console.log('Mening tug`ulgan kunim ' + myArray);
+console.log('Mening dustimning tug`ulgan kuni ' + myArray1);
