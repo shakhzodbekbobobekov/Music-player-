@@ -2577,13 +2577,34 @@
 // console.log(clone1);
 
 
-let myArray = [ 12, 16, 2000 ]
-let myArray1 = myArray
-//*clone
-myArray = [...myArray1]
-myArray1[0] = 14
-myArray1[1] = 01
-myArray1[2] = 2000
+// let myArray = [ 12, 16, 2000 ]
+// let myArray1 = myArray
+// //*clone
+// myArray = [...myArray1]
+// myArray1[0] = 14
+// myArray1[1] = 01
+// myArray1[2] = 2000
 
-console.log('Mening tug`ulgan kunim ' + myArray);
-console.log('Mening dustimning tug`ulgan kuni ' + myArray1);
+// console.log('Mening tug`ulgan kunim ' + myArray);
+// console.log('Mening dustimning tug`ulgan kuni ' + myArray1);
+
+// let arr = 'Assalomu alaykum hammaga. Hamma sog` omonmi?';
+// let natija = arr.split(' ').join('+')
+// console.log(natija);
+
+let userSelectorNumber = 9;
+function result(userSelectorNumber) {
+  let randomNumber = Math.floor(Math.random() * 9 ) + 1;
+  if( userSelectorNumber > randomNumber && typeof userSelectorNumber === 'number' ) {
+    return (` Siz katta raqam kitirdingiz. Iltimos qayta urinib kuring. Bu son ${randomNumber} edi.😅 `);
+  }else if( userSelectorNumber > randomNumber && typeof userSelectorNumber === 'number' ) {
+    return (` Siz kichik raqam kitirdingiz. Iltimos qayta urinib kuring. Bu son ${randomNumber} edi.😅 `);
+  }else if( typeof userSelectorNumber === 'number' ) {
+    return (`Siz tugri raqam kiritdingiz.😎`);
+  }else{
+    return ('Hurmatli user siz raqam kiriting iltimos');
+  }
+}
+
+console.log(result(userSelectorNumber));
+
