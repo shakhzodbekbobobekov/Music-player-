@@ -2592,19 +2592,101 @@
 // let natija = arr.split(' ').join('+')
 // console.log(natija);
 
-let userSelectorNumber = 9;
-function result(userSelectorNumber) {
-  let randomNumber = Math.floor(Math.random() * 9 ) + 1;
-  if( userSelectorNumber > randomNumber && typeof userSelectorNumber === 'number' ) {
-    return (` Siz katta raqam kitirdingiz. Iltimos qayta urinib kuring. Bu son ${randomNumber} edi.😅 `);
-  }else if( userSelectorNumber > randomNumber && typeof userSelectorNumber === 'number' ) {
-    return (` Siz kichik raqam kitirdingiz. Iltimos qayta urinib kuring. Bu son ${randomNumber} edi.😅 `);
-  }else if( typeof userSelectorNumber === 'number' ) {
-    return (`Siz tugri raqam kiritdingiz.😎`);
-  }else{
-    return ('Hurmatli user siz raqam kiriting iltimos');
-  }
-}
+// let userSelectorNumber = 9;
+// function result(userSelectorNumber) {
+//   let randomNumber = Math.floor(Math.random() * 9 ) + 1;
+//   if( userSelectorNumber > randomNumber && typeof userSelectorNumber === 'number' ) {
+//     return (` Siz katta raqam kitirdingiz. Iltimos qayta urinib kuring. Bu son ${randomNumber} edi.😅 `);
+//   }else if( userSelectorNumber > randomNumber && typeof userSelectorNumber === 'number' ) {
+//     return (` Siz kichik raqam kitirdingiz. Iltimos qayta urinib kuring. Bu son ${randomNumber} edi.😅 `);
+//   }else if( typeof userSelectorNumber === 'number' ) {
+//     return (`Siz tugri raqam kiritdingiz.😎`);
+//   }else{
+//     return ('Hurmatli user siz raqam kiriting iltimos');
+//   }
+// }
 
-console.log(result(userSelectorNumber));
+// console.log(result(userSelectorNumber));
+
+// let text = 'yuu';
+// let natija = text.slice( text.length - 2 )
+// let oxirigiNatija = natija + text.slice( 0, text.length - 2 )
+// console.log(oxirigiNatija);
+
+
+// if(  ( arrs[0] == arrs[arrs.length - 1] )){
+  //   console.log('Tugri');
+  // }else{
+    //   console.log('Pishdi');
+    // }
+    // let text = 'kjk sdf s fds f s'
+    // console.log(text.includes('fds'));
+    // console.log(
+      //   arrs.includes(3 )
+// );
+
+// let arrs = [ 17, 2, 3, 4, 5, 17 ];
+// function includes( array, search ){
+//   for( let item of array ) {
+//     if( item == search )  return true;
+//   }
+// }
+// console.log(includes(arrs, 2));
+
+// let arrs = [ 17, 2, 3, 4, 5, 17 ]
+
+// for( let item of arrs){
+//   if( item == 2 ){
+//     console.log(true);
+//   }
+//   console.log('xato');
+// }
+
+// const infoP = document.querySelectorAll('.info-p')
+// for( let item of infoP ) {
+//   item.style.color = 'white'
+//   item.style.backgroundColor = 'green'
+// }
+// const parag = document.querySelector('.parag')
+// parag.setAttribute( 'class', 'extra' )
+// const box = document.querySelector('.box')
+// const newItem = document.createElement('p')
+// newItem.setAttribute( 'class', 'extra' )
+// classlist.add
+// newItem.textContent = 'Salom hammaga'
+// console.log(newItem);
+// box.appendChild(newItem)
+
+// const input = document.getElementById('input')
+// const text = document.getElementById('text')
+
+// input.addEventListener('keyup', () => {
+//   text.textContent = input.value;
+// })
+
+// function konsTogo(cpu, title, ram, hhd) {
+//   this.cpu = cpu;
+//   this.title = title;
+//   this.ram = ram;
+//   this.hhd = hhd;
+// }
+
+// let natija = new konsTogo('i9', 'hp', '32gb', '1Tb')
+// console.log(natija);
+
+// const box = document.querySelector('.box')
+
+// const newItem = document.createElement('p')
+// newItem.setAttribute('class', 'bar')
+// newItem.textContent = 'Salom'
+// box.appendChild(newItem)
+
+// const box = document.querySelector('.box')
+
+// const newItem = document.createElement('input')
+// newItem.setAttribute('placeholder', "age")
+// // newItem.classList.add('bar')
+// newItem.textContent = 'Hello JavaScript'
+// console.log(newItem);
+// box.append(newItem)
 
