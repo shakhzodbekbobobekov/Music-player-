@@ -2690,27 +2690,27 @@
 // console.log(newItem);
 // box.append(newItem)
 
-const inputName = document.querySelector('.inputName')
-const inputAge = document.querySelector('.inputAge')
-const inputMerred = document.querySelector('.inputMerred')
+// const inputName = document.querySelector('.inputName')
+// const inputAge = document.querySelector('.inputAge')
+// const inputMerred = document.querySelector('.inputMerred')
 
-const submitBtn = document.querySelector('.submit')
-const canselBtn = document.querySelector('.cansel')
+// const submitBtn = document.querySelector('.submit')
+// const canselBtn = document.querySelector('.cansel')
 
-const fNameText = document.querySelector('.fNameText')
-const ageText = document.querySelector('.ageText')
-const merridText = document.querySelector('.merridText')
+// const fNameText = document.querySelector('.fNameText')
+// const ageText = document.querySelector('.ageText')
+// const merridText = document.querySelector('.merridText')
 
-//
+// //
 
-inputName.addEventListener('input', () => {
-  fNameText.innerHTML = inputName.value
-})
+// inputName.addEventListener('input', () => {
+//   fNameText.innerHTML = inputName.value
+// })
 
-inputAge.addEventListener('input', () => {
-  ageText.innerHTML = inputAge.value
-})
+// inputAge.addEventListener('input', () => {
+//   ageText.innerHTML = inputAge.value
+// })
 
-inputMerred.addEventListener('input', () => {
-  merridText.innerHTML = inputMerred.value
-})
+// inputMerred.addEventListener('input', () => {
+//   merridText.innerHTML = inputMerred.value
+// })
