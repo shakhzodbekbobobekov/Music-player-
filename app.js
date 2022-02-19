@@ -2714,3 +2714,29 @@
 // inputMerred.addEventListener('input', () => {
 //   merridText.innerHTML = inputMerred.value
 // })
+
+const todoList = document.querySelector('.todo-list')
+const text = document.querySelector('.text')
+const btn = document.querySelector('.btn')
+const todoListChild = todoList.children
+// new item create
+
+todoList.addEventListener('click', () => {
+  console.log(`ToDo liset (ul) bosildi`);
+})
+
+btn.addEventListener('click', addItem)
+
+ function addItem() {
+  const newItem = document.createElement('li')
+  newItem.classList.add('item')
+  newItem.innerHTML = `Item ${todoListChild.length}`
+  todoList.append(newItem)
+
+  newItem.addEventListener('click', (e) => {
+    // e.stopPropagation()
+    newItem.remove()
+    console.log('li bosildi');
+  })
+}
+
