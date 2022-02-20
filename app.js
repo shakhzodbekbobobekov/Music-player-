@@ -2755,18 +2755,30 @@
 // console.log(text.split(' ').join('  '));
 
 
-let arr = [
-  {userName: 'Caroi'},
-  {userName: 'Bahrom'},
-  {userName: 'David'},
-  {userName: 'Abdulloh'},
-  {userName: 'Abds'},
-]
+// let arr = [
+//   {userName: 'Caroi'},
+//   {userName: 'Bahrom'},
+//   {userName: 'David'},
+//   {userName: 'Abdulloh'},
+//   {userName: 'Abds'},
+// ]
 
-arr.sort(( a, b) => {
-  if( a.userName < b.userName ) return -1;
-  if( a.userName > b.userName ) return 1;
-  return 0
-})
+// arr.sort(( a, b) => {
+//   if( a.userName < b.userName ) return -1;
+//   if( a.userName > b.userName ) return 1;
+//   return 0
+// })
 
-console.log(arr);
+// console.log(arr);
+
+// let text = 'SALOM hamMAGA'
+// console.log(text.toLowerCase());
+
+
+let arr = [1, 2, 3]
+
+ let natija =  arr.reduce((sum, item) => {
+  return ( sum += item );
+}, 0)
+
+console.log(natija);
