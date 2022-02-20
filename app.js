@@ -2775,10 +2775,18 @@
 // console.log(text.toLowerCase());
 
 
-let arr = [1, 2, 3]
+// let arr = [1, 2, 3]
 
- let natija =  arr.reduce((sum, item) => {
-  return ( sum += item );
-}, 0)
+//  let natija =  arr.reduce((sum, item) => {
+//   return ( sum += item );
+// }, 0)
 
+// console.log(natija);
+
+let arr = [ 1, 2, 3 ];
+let arr1 = [ 4, 5, 6 ]
+let natija = arr.concat(arr1)
+let newNatija = natija;
+newNatija[2] = 99
 console.log(natija);
+console.log(newNatija);
