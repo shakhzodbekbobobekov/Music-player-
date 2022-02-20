@@ -2798,19 +2798,28 @@
 // const result = add( 1, 2, 3, 4, 5, 6 )
 // // console.log(result);
 
-let person = {
-  fName: 'Jon',
-  lName: 'Doe',
+// let person = {
+//   fName: 'Jon',
+//   lName: 'Doe',
 
-  get fullName() {
-    return this.fName + ' ' + this.lName
-  },
+//   get fullName() {
+//     return this.fName + ' ' + this.lName
+//   },
 
-  set fullName(value) {
-    let newFullNameArray = value.split(' ');
-    this.fName = newFullNameArray[0]
-    this.lName = newFullNameArray[1]
-  }
+//   set fullName(value) {
+//     let newFullNameArray = value.split(' ');
+//     this.fName = newFullNameArray[0]
+//     this.lName = newFullNameArray[1]
+//   }
+// }
+// person.fullName = 'Bobobekov Shaxzodbek'
+// console.log(person);
+
+
+try {
+  console.log('firtName');
+  console.log(Natija);
+}catch(e) {
+  console.log(e.message);
+  console.log('secondName');
 }
-person.fullName = 'Bobobekov Shaxzodbek'
-console.log(person);
