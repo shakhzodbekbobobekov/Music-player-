@@ -2715,28 +2715,58 @@
 //   merridText.innerHTML = inputMerred.value
 // })
 
-const todoList = document.querySelector('.todo-list')
-const text = document.querySelector('.text')
-const btn = document.querySelector('.btn')
-const todoListChild = todoList.children
-// new item create
+// const todoList = document.querySelector('.todo-list')
+// const text = document.querySelector('.text')
+// const btn = document.querySelector('.btn')
+// const todoListChild = todoList.children
+// // new item create
 
-todoList.addEventListener('click', () => {
-  console.log(`ToDo liset (ul) bosildi`);
+
+//   console.log(`ToDo liset (ul) bosildi`);
+// })
+
+// btn.addEventListener('click', addItem)
+
+//  function addItem() {
+//   const newItem = document.createElement('li')
+//   newItem.classList.add('item')
+//   newItem.innerHTML = `Item ${todoListChild.length}`
+
+
+//   newItem.addEventListener('click', (e) => {
+//     // e.stopPropagation()
+//     newItem.remove()
+//     console.log('li bosildi');
+//   })
+// }
+
+
+// function Book( names ){
+//   return {
+//     names: names
+//   }
+// }
+
+// let result1 = new Object(Book('Bel Geyt1'))
+// console.log(result1);
+
+
+// let text = 'absd dsba';
+// console.log(text.split(' ').join('  '));
+
+
+let arr = [
+  {userName: 'Caroi'},
+  {userName: 'Bahrom'},
+  {userName: 'David'},
+  {userName: 'Abdulloh'},
+  {userName: 'Abds'},
+]
+
+arr.sort(( a, b) => {
+  if( a.userName < b.userName ) return -1;
+  if( a.userName > b.userName ) return 1;
+  return 0
 })
 
-btn.addEventListener('click', addItem)
-
- function addItem() {
-  const newItem = document.createElement('li')
-  newItem.classList.add('item')
-  newItem.innerHTML = `Item ${todoListChild.length}`
-  todoList.append(newItem)
-
-  newItem.addEventListener('click', (e) => {
-    // e.stopPropagation()
-    newItem.remove()
-    console.log('li bosildi');
-  })
-}
-
+console.log(arr);
