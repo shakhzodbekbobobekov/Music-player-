@@ -2783,10 +2783,34 @@
 
 // console.log(natija);
 
-let arr = [ 1, 2, 3 ];
-let arr1 = [ 4, 5, 6 ]
-let natija = arr.concat(arr1)
-let newNatija = natija;
-newNatija[2] = 99
-console.log(natija);
-console.log(newNatija);
+// let arr = [ 1, 2, 3 ];
+// let arr1 = [ 4, 5, 6 ]
+// let natija = arr.concat(arr1)
+// let newNatija = natija;
+// newNatija[2] = 99
+// console.log(natija);
+// console.log(newNatija);
+
+// function add( 1params ) {
+//   console.log(params);
+// }
+
+// const result = add( 1, 2, 3, 4, 5, 6 )
+// // console.log(result);
+
+let person = {
+  fName: 'Jon',
+  lName: 'Doe',
+
+  get fullName() {
+    return this.fName + ' ' + this.lName
+  },
+
+  set fullName(value) {
+    let newFullNameArray = value.split(' ');
+    this.fName = newFullNameArray[0]
+    this.lName = newFullNameArray[1]
+  }
+}
+person.fullName = 'Bobobekov Shaxzodbek'
+console.log(person);
