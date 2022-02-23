@@ -2816,10 +2816,123 @@
 // console.log(person);
 
 
-try {
-  console.log('firtName');
-  console.log(Natija);
-}catch(e) {
-  console.log(e.message);
-  console.log('secondName');
+// try {
+//   console.log('firtName');
+//   console.log(Natija);
+// }catch(e) {
+//   console.log(e.message);
+//   console.log('secondName');
+// }
+
+// let names = 'Muhammad';
+
+// {
+//   let names = 'Muhammadjon';
+//   console.log(names);
+// }
+
+// console.log(names);
+
+// let person = {
+//   fName: 'Sardor',
+//   lName: 'Odilov',
+//   get fullName() {
+//     return this.fName + ' ' + this.lName;
+//   },
+
+//   set fullName(value) { 
+//     let newFullNameArray = value.split(' ');
+//     this.fName = newFullNameArray[0];
+//     this.lName = newFullNameArray[1];
+//   },
+// }
+
+// person.fullName = 'Bobobekov Shaxzodbek';
+//  console.log(person);
+
+// let arr1 = [ 
+//   {
+//     names: 'abror',
+//     age: 20
+//   },
+//   {
+//     names: 'ror',
+//     age: 22
+//   },
+//   {
+//     names: 'or',
+//     age: 22
+//   },
+//  ]
+
+// let natija = arr1.filter(function(item) {
+//   return (item.names.includes('ror'));
+// })
+
+// console.log(natija);
+
+// let user = {
+//   names: 'Salim',
+//   age: '21',
+//   job: 'student',
+// }
+
+// let natija = Object.keys(user);
+//  for( let i=0; i< natija.length; i++ )
+//   console.log(natija[i]);
+
+
+// let sonlar = [12, 16, 20, 7, 19, 22, 3, 9 ]
+// sonlar.sort((a, b) => {
+//   return a - b
+// }) 
+// console.log(sonlar);
+
+// let kinolar = [
+//   {title: 'Hayot', rating: 8.5},
+//   {title: 'Yul', rating: 2.9},
+//   {title: 'Chul', rating: 9.8}
+  
+// ]
+
+// let natija = kinolar.sort((b, a) => {
+//   return a.rating - b.rating
+// })
+
+// console.log(natija);
+
+// let user = {
+//   fName: 'Shaxzodbek',
+//   age: 22,
+// }
+
+// function hi() {
+//   console.log(this);
+// }
+
+// user.hi = hi
+// console.log(user.hi);
+
+let user = {
+  fName: 'Shaxzodbek',
+  age: 22,
+  getFullName() {
+    console.log(this.fName + ' ' + this.age);
+  }
+};
+
+function registerUser() {
+  console.log(this);
 }
+
+//bind
+const register = registerUser.bind(user)
+register()
+
+// let sonlar = [ 1,2,3,4,5,6,7,8,9 ]
+// let natija = sonlar.reduce((item, qushuv) => {
+//   return (item += qushuv );
+// },0)
+
+// console.log(natija);
+
