@@ -2979,34 +2979,85 @@ function gruopMethod(names1, age1, job1){
 gruopMethod( 'Shaxzodbek', 22, 'Frontend Dev' )
 */
 
-function sam() {
-  console.log(this);
+// function sam() {
+//   console.log(this);
+// }
+
+// let userBexruzjon = {
+//   fName: 'Bexruzjon',
+//   lName: 'Sirojov',
+//   job: 'Hacker 😎',
+//   age: 22,
+//   callInfoJob: function(number) {
+//     console.group(`${this.fName} infoText:`);
+//     console.log(`Name: ${this.fName}`);
+//     console.log(`Family: ${this.lName}`);
+//     console.log(`Job: ${this.job}`);
+//     console.log(`Age: ${this.age}`);
+//     console.log(`Number: ${number}`);
+//     console.groupEnd();
+//   }
+// }
+
+// let userXurshidjon = {
+//   fName: 'Xurshidjon',
+//   lName: 'Sirojov',
+//   job: 'Grafik Disegn 😎',
+//   age: 19,
+// }
+
+// userBexruzjon.callInfoJob.call(userXurshidjon, '77')
+
+
+// let userBobur = {
+//   ism: 'Bobur',
+//   famaliya: 'Jabbarov'
+//   text5: getText() {
+//     console.group(`${this.ism} info:`);
+//     console.log(`Ismlar: ${this.ism}`);
+//     console.log(`Famaliya: ${this.famaliya}`);
+//     console.groupEnd();
+//   }
+// }
+
+// let userDavron = {
+//   ism: 'Davron',
+//   famaliya: 'Aliev'
+// }
+
+// userBobur.text5.bind(userDavron)()
+
+// function Tod7o(fname, age, lName){
+  
+//     this.fname=fname;
+//     this.age=age;
+//     this.lName=lName;
+   
+// }
+
+// let ToDoNatija = new Tod7o( 'Bobobekov', 22, "Shaxzodbek" )
+// console.log(ToDoNatija);
+
+// let user = {
+//   fName: 'Shaxzodbek',
+//   age: '77😉😎'
+// }
+
+// console.log(user.age.length);
+
+
+// let smile = '😎😉';
+// console.log(smile.length);
+
+let user = {
+  fName: 'ALi',
+  age: 'enid ikki yosh😋'
 }
 
-let userBexruzjon = {
-  fName: 'Bexruzjon',
-  lName: 'Sirojov',
-  job: 'Hacker 😎',
-  age: 22,
-  callInfoJob: function(number) {
-    console.group(`${this.fName} infoText:`);
-    console.log(`Name: ${this.fName}`);
-    console.log(`Family: ${this.lName}`);
-    console.log(`Job: ${this.job}`);
-    console.log(`Age: ${this.age}`);
-    console.log(`Number: ${number}`);
-    console.groupEnd();
-  }
-}
+// let userOOP = {}
 
-let userXurshidjon = {
-  fName: 'Xurshidjon',
-  lName: 'Sirojov',
-  job: 'Grafik Disegn 😎',
-  age: 19,
-}
+// let natija = Object.setPrototypeOf(userOOP, user)
+// console.log(natija.age);
 
-userBexruzjon.callInfoJob.bind(userXurshidjon)
-
-
-
+let userOOP = Object.create(user)
+console.log(userOOP.age);
