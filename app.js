@@ -2936,7 +2936,7 @@
 
 // console.log(natija);
 
-function sam() {
+/* function sam() {
   // return this
   console.log(this);
 }
@@ -2964,3 +2964,49 @@ const frontendDev = {
 }
 
 person.callInfoJob.bind(frontendDev)()
+
+
+function gruopMethod(names1, age1, job1){
+  console.group(`${names1} info:`);
+  console.log(`
+    Ism: ${names1} 
+    Age: ${age1} 
+    Job1: ${job1} 😎
+  `);
+  console.groupEnd();
+}
+
+gruopMethod( 'Shaxzodbek', 22, 'Frontend Dev' )
+*/
+
+function sam() {
+  console.log(this);
+}
+
+let userBexruzjon = {
+  fName: 'Bexruzjon',
+  lName: 'Sirojov',
+  job: 'Hacker 😎',
+  age: 22,
+  callInfoJob: function(number) {
+    console.group(`${this.fName} infoText:`);
+    console.log(`Name: ${this.fName}`);
+    console.log(`Family: ${this.lName}`);
+    console.log(`Job: ${this.job}`);
+    console.log(`Age: ${this.age}`);
+    console.log(`Number: ${number}`);
+    console.groupEnd();
+  }
+}
+
+let userXurshidjon = {
+  fName: 'Xurshidjon',
+  lName: 'Sirojov',
+  job: 'Grafik Disegn 😎',
+  age: 19,
+}
+
+userBexruzjon.callInfoJob.bind(userXurshidjon)
+
+
+
