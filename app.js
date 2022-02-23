@@ -2913,21 +2913,21 @@
 // user.hi = hi
 // console.log(user.hi);
 
-let user = {
-  fName: 'Shaxzodbek',
-  age: 22,
-  getFullName() {
-    console.log(this.fName + ' ' + this.age);
-  }
-};
+// let user = {
+//   fName: 'Shaxzodbek',
+//   age: 22,
+//   getFullName() {
+//     console.log(this.fName + ' ' + this.age);
+//   }
+// };
 
-function registerUser() {
-  console.log(this);
-}
+// function registerUser() {
+//   console.log(this);
+// }
 
-//bind
-const register = registerUser.bind(user)
-register()
+// //bind
+// const register = registerUser.bind(user)
+// register()
 
 // let sonlar = [ 1,2,3,4,5,6,7,8,9 ]
 // let natija = sonlar.reduce((item, qushuv) => {
@@ -2936,3 +2936,31 @@ register()
 
 // console.log(natija);
 
+function sam() {
+  // return this
+  console.log(this);
+}
+
+let person = {
+  fName: 'Shaxzodbek',
+  lName: 'Bobobekov',
+  job: 'RaectJS dev',
+  age: 22,
+  callInfoJob: function() {
+    console.group(`${this.fName} info:`);
+    console.log(`Name: ${this.fName}`);
+    console.log(`Family: ${this.lName}`);
+    console.log(`Job: ${this.job}`);
+    console.log(`Age: ${this.age}`);
+    console.groupEnd();
+  }
+}
+
+const frontendDev = {
+  fName: 'Dostonbek',
+  lName: 'Izzatullayev',
+  job: 'FullStack dev',
+  age: 22,
+}
+
+person.callInfoJob.bind(frontendDev)()
