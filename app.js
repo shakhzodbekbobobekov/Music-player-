@@ -3049,15 +3049,38 @@ gruopMethod( 'Shaxzodbek', 22, 'Frontend Dev' )
 // let smile = '😎😉';
 // console.log(smile.length);
 
-let user = {
-  fName: 'ALi',
-  age: 'enid ikki yosh😋'
-}
+// let user = {
+//   fName: 'ALi',
+//   age: 'enid ikki yosh😋'
+// }
 
 // let userOOP = {}
 
 // let natija = Object.setPrototypeOf(userOOP, user)
 // console.log(natija.age);
 
-let userOOP = Object.create(user)
-console.log(userOOP.age);
+// let userOOP = Object.create(user)
+// console.log(userOOP.age);
+
+// let user = {
+//   fName: 'Shaxzodbek',
+//   lName: 'Bobobekov',
+//   age: 22
+// }
+// let resultMap = user.map((item) => {
+//   console.log(item);
+// })
+
+// setTimeout((user) => {
+//   console.log('Salom Hammaga ');
+// }, 2000)
+
+const loader = document.querySelector('.lds-hourglass')
+const body = document.querySelector('body')
+console.log(body);
+
+setTimeout(() => {
+  loader.style.display = 'none'
+  body.style.backgroundColor = 'white'
+  body.innerHTML = 'Hello JavaScript !'
+}, 2000)
