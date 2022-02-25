@@ -3075,12 +3075,38 @@ gruopMethod( 'Shaxzodbek', 22, 'Frontend Dev' )
 //   console.log('Salom Hammaga ');
 // }, 2000)
 
-const loader = document.querySelector('.lds-hourglass')
-const body = document.querySelector('body')
-console.log(body);
+// const loader = document.querySelector('.lds-hourglass')
+// const body = document.querySelector('body')
+// console.log(body);
 
-setTimeout(() => {
-  loader.style.display = 'none'
-  body.style.backgroundColor = 'white'
-  body.innerHTML = 'Hello JavaScript !'
-}, 2000)
+// setTimeout(() => {
+//   loader.style.display = 'none'
+//   body.style.backgroundColor = 'white'
+//   body.innerHTML = 'Hello JavaScript !'
+// }, 2000)
+
+let arr = [
+  {
+    title: 'bmw',
+    reyting: 8
+  },
+  {
+    title: 'mers',
+    reyting: 5
+  },
+  {
+    title: 'audio',
+    reyting: 6
+  },
+  {
+    title: 'uz gm',
+    reyting: 11
+  },
+]
+
+let natija = arr.sort((a, b) =>{
+  return b.reyting - b.reyting
+})
+
+console.log(natija);
+
