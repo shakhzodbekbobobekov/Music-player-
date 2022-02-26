@@ -3085,28 +3085,38 @@ gruopMethod( 'Shaxzodbek', 22, 'Frontend Dev' )
 //   body.innerHTML = 'Hello JavaScript !'
 // }, 2000)
 
-let arr = [
-  {
-    title: 'bmw',
-    reyting: 8
-  },
-  {
-    title: 'mers',
-    reyting: 5
-  },
-  {
-    title: 'audio',
-    reyting: 6
-  },
-  {
-    title: 'uz gm',
-    reyting: 11
-  },
-]
+// let arr = [
+//   {
+//     title: 'bmw',
+//     reyting: 8
+//   },
+//   {
+//     title: 'mers',
+//     reyting: 5
+//   },
+//   {
+//     title: 'audio',
+//     reyting: 6
+//   },
+//   {
+//     title: 'uz gm',
+//     reyting: 11
+//   },
+// ]
 
-let natija = arr.sort((a, b) =>{
-  return b.reyting - b.reyting
-})
+// let natija = arr.sort((a, b) =>{
+//   return b.reyting - b.reyting
+// })
 
-console.log(natija);
+// console.log(natija);
 
+// fetch('https://api.adviceslip.com/advice')
+// .then((result) => {
+//   console.log(result.json()   );
+// })
+
+import * as allELements from './main.js'
+
+allELements.firstShag()
+console.log(allELements.natija1);
+console.log(allELements.natija2);
