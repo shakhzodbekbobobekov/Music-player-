@@ -3115,8 +3115,21 @@ gruopMethod( 'Shaxzodbek', 22, 'Frontend Dev' )
 //   console.log(result.json()   );
 // })
 
-import * as allELements from './main.js'
+let isCarMarketOpen = false;
 
-allELements.firstShag()
-console.log(allELements.natija1);
-console.log(allELements.natija2);
+let newCar = new Promise( function(resolve, reject) {
+  if(isCarMarketOpen){
+    let car = {
+      title: 'Malibu',
+      color: 'black'
+    }
+    resolve(car)
+  }else{
+    let reason = 'market yopiq 😂';
+    reject(reason)
+  }
+})
+
+newCar
+  .then((result) => console.log(result))
+  .catch((error) => console.log(error))
