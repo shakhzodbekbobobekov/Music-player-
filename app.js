@@ -3115,21 +3115,163 @@ gruopMethod( 'Shaxzodbek', 22, 'Frontend Dev' )
 //   console.log(result.json()   );
 // })
 
-let isCarMarketOpen = false;
+// let isCarMarketOpen = false;
 
-let newCar = new Promise( function(resolve, reject) {
-  if(isCarMarketOpen){
-    let car = {
-      title: 'Malibu',
-      color: 'black'
+// let newCar = new Promise( function(resolve, reject) {
+//   if(isCarMarketOpen){
+//     let car = {
+//       title: 'Malibu',
+//       color: 'black'
+//     }
+//     resolve(car)
+//   }else{
+//     let reason = 'market yopiq 😂';
+//     reject(reason)
+//   }
+// })
+
+// newCar
+//   .then((result) => console.log(result))
+//   .catch((error) => console.log(error))
+
+// let magazinOChiqYokiYopiq = true;
+
+// let natijaOlamiza = new Promise( function( resolve, reject ) {
+//   if( magazinOChiqYokiYopiq ){
+//     let sovgamiza = {
+//       title: 'Equxinio 🏎',
+//       color: 'MokriyAsfalt'
+//     }
+//       resolve(sovgamiza);
+//   }else{
+//     let kechirasizMagazinYopiq = new Error(' Aka uzr bugun magazinimiza yopiq edi, ertaga kelarsiz endi 😅😂')
+//     reject(kechirasizMagazinYopiq)
+//   }
+// })
+
+// natijaOlamiza
+//   .then((result) => console.log(result))
+//   .catch((error) => console.log(error.message))
+
+// let OchiqYopiq = false;
+
+// let natijaOlamiza = new Promise(function( resolve, reject ){
+//   if( OchiqYopiq ){
+//     let sovga = {
+//       title: 'Captiva',
+//       color: 'mokriy'
+//     }
+//     resolve(sovga)
+//   }else{
+//     let uzr = new Error( 'Uzr dukon yopiq ekanku :)' )
+//     reject(uzr)
+//   }
+// })
+
+
+// natijaOlamiza 
+//   .then((result) => console.log(result))
+//   .catch((error) => console.log(error.message))
+// const demo = document.querySelector('.demo')
+
+// let url = "https://api.github.com/users/" 
+
+// fetch(url)
+//   .then((result) => result.json())
+//   .then((data))
+
+//   function data(item) {
+//     console.log(item);
+//     let text = item.login;
+//     let img = item.avatar_url;
+
+//     demo.innerHTML = `
+//       <h1>Ismi: ${text}</h1>
+//       <img src="${img}">
+//     `
+
+//   }
+
+// let ochiqYopiq = false;
+
+// let natijaOlamiza = new Promise( function( resolve, reject ){
+//   if( ochiqYopiq ){
+//     let sovga = {
+//       title: 'bmw X7',
+//       color: 'mokriy'
+//     }
+//     resolve(car)
+//   }else{
+//     let yopiq = new Error('dukon yopiq')
+//     reject(yopiq)
+//   }
+// })
+
+// natijaOlamiza
+//   .then((result) => console.log(result))
+//   .catch((error) => console.log(error.message))
+
+
+// let url = "https://api.github.com/users/akhrorsoliev"
+
+// fetch(url)
+//   .then((result) => result.json())
+//   .then((data))
+
+//   function data(dataUser){
+//     console.log(dataUser.id);
+//   }
+
+// let ochiqYopiq = true
+
+// let natijaOlish = new Promise( function( resolve, reject ){
+//   if( ochiqYopiq ){
+//     let user = {
+//       title: 'bmw X7',
+//       color: 'black'
+//     }
+//     resolve(user)
+//   }else{
+//     let yopiqVaqti = new Error( 'Uzr dukon yopiq ekanku 😥' )
+//     reject(yopiqVaqti)
+//   }
+// })
+
+// natijaOlish
+//   .then((result) => console.log(result))
+//   .catch((error) => console.log(error ))
+
+const form = document.querySelector('form')
+const input = document.querySelector('#input')
+const text = document.querySelector('.text')
+
+
+
+let word
+qaytaIshla()
+
+
+  function qaytaIshla(){ 
+    let url = 'https://random-word-api.herokuapp.com/word'
+
+  fetch(url)
+    .then((result) => result.json())
+    .then(getData)
+
+    function getData(data) {
+      word = data[0]
+      text.textContent = word    
+      input.value  = ""     
     }
-    resolve(car)
-  }else{
-    let reason = 'market yopiq 😂';
-    reject(reason)
+   }
+
+  
+    form.addEventListener('input', () => {
+      if( input.value == word ){
+        qaytaIshla()
   }
 })
 
-newCar
-  .then((result) => console.log(result))
-  .catch((error) => console.log(error))
+
+
+
