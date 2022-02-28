@@ -3242,35 +3242,39 @@ gruopMethod( 'Shaxzodbek', 22, 'Frontend Dev' )
 //   .catch((error) => console.log(error ))
 
 const form = document.querySelector('form')
-const input = document.querySelector('#input')
 const text = document.querySelector('.text')
+const input = document.querySelector('#input')
+
+// console.log();
+form.addEventListener('input', (e) => {
+  text.innerHTML = e.target
+
+})
+
+// let word
+// qaytaIshla()
 
 
+//   function qaytaIshla(){ 
+//     let url = 'https://random-word-api.herokuapp.com/word'
 
-let word
-qaytaIshla()
+//   fetch(url)
+//     .then((result) => result.json())
+//     .then(getData)
 
-
-  function qaytaIshla(){ 
-    let url = 'https://random-word-api.herokuapp.com/word'
-
-  fetch(url)
-    .then((result) => result.json())
-    .then(getData)
-
-    function getData(data) {
-      word = data[0]
-      text.textContent = word    
-      input.value  = ""     
-    }
-   }
+//     function getData(data) {
+//       word = data[0]
+//       text.textContent = word    
+//       input.value  = ""     
+//     }
+//    }
 
   
-    form.addEventListener('input', () => {
-      if( input.value == word ){
-        qaytaIshla()
-  }
-})
+//     form.addEventListener('input', () => {
+//       if( input.value == word ){
+//         qaytaIshla()
+//   }
+// })
 
 
 
