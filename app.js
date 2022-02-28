@@ -3241,15 +3241,15 @@ gruopMethod( 'Shaxzodbek', 22, 'Frontend Dev' )
 //   .then((result) => console.log(result))
 //   .catch((error) => console.log(error ))
 
-const form = document.querySelector('form')
-const text = document.querySelector('.text')
-const input = document.querySelector('#input')
+// const form = document.querySelector('form')
+// const text = document.querySelector('.text')
+// const input = document.querySelector('#input')
 
-// console.log();
-form.addEventListener('input', (e) => {
-  text.innerHTML = e.target
+// // console.log();
+// form.addEventListener('input', (e) => {
+//   text.innerHTML = e.target
 
-})
+// })
 
 // let word
 // qaytaIshla()
@@ -3277,5 +3277,17 @@ form.addEventListener('input', (e) => {
 // })
 
 
+let url  = 'https://covid19.mathdro.id/api/countries'
 
+fetch(url)
+  .then((dataCome) => dataCome.json())
+  .then((dataInfo))
+
+  function dataInfo(data){
+    data.countries.forEach(element => {
+      if( element.name == Uzbekistan ){
+        console.log('7');
+      } 
+    });
+  }
 
