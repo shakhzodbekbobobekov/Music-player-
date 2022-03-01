@@ -3277,17 +3277,83 @@ gruopMethod( 'Shaxzodbek', 22, 'Frontend Dev' )
 // })
 
 
-let url  = 'https://covid19.mathdro.id/api/countries'
+// let url  = 'https://covid19.mathdro.id/api/countries'
 
-fetch(url)
-  .then((dataCome) => dataCome.json())
-  .then((dataInfo))
+// fetch(url)
+//   .then((dataCome) => dataCome.json())
+//   .then((dataInfo))
 
-  function dataInfo(data){
-    data.countries.forEach(element => {
-      if( element.name == Uzbekistan ){
-        console.log('7');
-      } 
-    });
+//   function dataInfo(data){
+//     data.countries.forEach(element => {
+//       if( element.name == Uzbekistan ){
+//         console.log('7');
+//       } 
+//     });
+//   }
+// let son = 5
+
+// function squre(number){
+//   console.log( number * number );
+// }
+
+// squre(son)
+
+// const api = 'https://covid19.mathdro.id/api/countries/uzbekistan'
+
+// async function useFetch(url){
+//   console.log('loading.....');
+//   const req = await fetch(url);
+//   const data = await req.json()
+//   console.log(data);
+//   console.log('done....');
+// }
+
+// useFetch(api)
+
+
+// console.log('Boshi');
+
+// try{
+//   let a = 5
+//   console.log(a);
+//   throw new Error('Qanqadir xato bor TRY da')
+// }catch(err){
+//   console.log("err");
+// }
+
+// console.log('Oxiri');
+
+
+// try{
+//   console.log('sending...');
+//   console.log(lName);
+//   throw new Error('Xatoooooooo')
+// }catch(err){
+//   console.log(err.message);
+//   console.log('keldi');
+// }
+
+
+// let paddingFunc = async () => {
+//   let url = "https://api.github.com/users/shakhzodbekbobobekov" 
+//     let req = await fetch(url)
+//     console.log(req.ok); 
+// }
+
+// fetch(url)
+// .then((result) => result.json())
+// .then((data) => console.log(data.results[0].name))
+
+async function fetchData(){
+  let url = 'https://randomuser.me/api/?results=10'
+  try{
+    let req = await fetch(url)
+    if( !req.results ){
+      console.log('xato');
+    }
+    let json = await req.json()
+    console.log(json.results[0].name)
+  }catch(error){
+    console.log(error);
   }
-
+}
