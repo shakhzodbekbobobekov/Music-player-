@@ -3344,16 +3344,19 @@ gruopMethod( 'Shaxzodbek', 22, 'Frontend Dev' )
 // .then((result) => result.json())
 // .then((data) => console.log(data.results[0].name))
 
-async function fetchData(){
-  let url = 'https://randomuser.me/api/?results=10'
-  try{
-    let req = await fetch(url)
-    if( !req.results ){
-      console.log('xato');
-    }
-    let json = await req.json()
-    console.log(json.results[0].name)
-  }catch(error){
-    console.log(error);
-  }
-}
+// async function fetchData(){
+//   let url = 'https://randomuser.me/api/?results=10'
+//   try{
+//     let req = await fetch(url)
+//     if( !req.results ){
+//       console.log('xato');
+//     }
+//     let json = await req.json()
+//     console.log(json.results[0].name)
+//   }catch(error){
+//     console.log(error);
+//   }
+// }
+// let today = new Date();
+// let getTodayYears = today.getFullYear()
+// console.log(getTodayYears);
