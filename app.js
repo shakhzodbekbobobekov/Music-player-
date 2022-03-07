@@ -1,7 +1,4 @@
-	
 		
-		 
-	
 	{
     // let utishBall : 111
     // let tuplaganBall = 177
@@ -3360,3 +3357,23 @@ gruopMethod( 'Shaxzodbek', 22, 'Frontend Dev' )
 // let today = new Date();
 // let getTodayYears = today.getFullYear()
 // console.log(getTodayYears);
+
+const textGet = document.querySelector('.root');
+const currentTime = 13;
+
+let textDate = '';
+let styleColor = '';
+
+if( currentTime < 12 ){
+  textDate = 'Tong sahar';
+  styleColor = 'red';
+}else if( currentTime < 18 ){
+  textDate = 'Tushlik vaqti';
+  styleColor = 'yellow';
+}else{
+  textDate = 'Kechasi'
+  styleColor = 'blue'
+}
+
+textGet.innerHTML = textDate
+textGet.style.color = 'yellow'
