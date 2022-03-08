@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,CAAE;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;EACtB,WAAW,EAAE,SAAS;;AAG1B,EAAG;EACC,gBAAgB,EAAE,OAAO;EACzB,OAAO,EAAE,IAAI;EACb,KAAK,EAAE,IAAI;EACX,cAAc,EAAE,GAAG",
+"sources": ["../sass/sytle.scss"],
+"names": [],
+"file": "main.css"
+}
