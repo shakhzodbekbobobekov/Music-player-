@@ -1,2 +1,2 @@
 # course-tasks
-JavaScript JS  // `Kursdagi vazifalar, Amaliyotlar ✌`
+JavaScript JS 
