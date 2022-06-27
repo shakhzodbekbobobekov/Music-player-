@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,EAAG;EACC,SAAS,EAAE,KAAK;EAChB,gBAAgB,EAAE,IAAI;EACtB,KAAK,EAAE,OAAO;;ACHlB,MAAO;EACH,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,IAAI;EACtB,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,IAAI;EACf,aAAa,EAAE,GAAG;;ACGtB,CAAE;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;EACtB,WAAW,EAAE,SAAS;;AAG1B,EAAG;EACC,gBAAgB,EAAE,OAAO;EACzB,OAAO,EAAE,IAAI;EACb,KAAK,EClBE,IAAI;EDmBX,cAAc,EAAE,GAAG",
-"sources": ["../sass/abstracts/_functions.scss","../sass/abstracts/_mixins.scss","../sass/sytle.scss","../sass/abstracts/_variables.scss"],
-"names": [],
-"file": "main.css"
-}
