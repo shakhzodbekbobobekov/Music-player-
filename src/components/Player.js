@@ -32,6 +32,12 @@ function Player({ currentSong, setIsPlaying, isPlaying }) {
     });
   };
 
+  const getTime = (time) => {
+    return (
+      Math.floor(time / 60) + ":" + ("0" + Math.floor(time % 60)).slice(-2)
+    );
+  };
+
   const [songInfo, setSongInfo] = useState({
     currentTime: null,
     duration: null,
@@ -40,9 +46,9 @@ function Player({ currentSong, setIsPlaying, isPlaying }) {
   return (
     <div className="player">
       <div className="time-control">
-        <p>start time</p>
+        <p>{getTime(songInfo.currentTime)}</p>
         <input type="range" />
-        <p>end time </p>
+        <p>{getTime(songInfo.duration)}</p>
       </div>
       <div className="player-control">
         {/* <FontAwesomeIcon icon={faPlay} /> */}
@@ -61,6 +67,7 @@ function Player({ currentSong, setIsPlaying, isPlaying }) {
       </div>
       <audio
         onTimeUpdate={timeUpdateHandler}
+        onLoadedMetadata={timeUpdateHandler}
         ref={audioRef}
         src={currentSong.audio}
       ></audio>
