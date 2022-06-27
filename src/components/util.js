@@ -10,6 +10,16 @@ function util() {
       id: uuidv4(),
       active: false,
     },
+    {
+      name: "O'zbegim ",
+      cover:
+        "https://www.savol-javob.com/wp-content/uploads/2020/05/maxresdefault-8.jpg",
+      artist: "Sherali Jurayev ",
+      color: ["#ccc444", "#754551"],
+      audio: "https://dl2.mp3party.net/online/9838731.mp3",
+      id: uuidv4(),
+      active: false,
+    },
   ];
 }
 
