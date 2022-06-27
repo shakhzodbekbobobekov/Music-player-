@@ -1,6 +1,5 @@
 .player {
     min-height: 20vh;
-    background-color: lightblue;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -10,7 +9,6 @@
 .time-control {
     display: flex;
     width: 50%;
-    background-color: #909090;
     input {
         width: 100%;
         padding: 1rem 2rem;
