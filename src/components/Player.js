@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { playSong } from "./util";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAngleLeft,
@@ -62,18 +63,20 @@ function Player({
     });
   };
 
-  const skipTrackHandle = (diraction) => {
+  const skipTrackHandle = (direction) => {
     let currentIndex = songs.findIndex((song) => song.id === currentSong.id);
-    if (diraction === "skip-forward") {
-      setCurrentSong(songs[currentIndex + 1] % songs.length);
+    if (direction === "skip-forward") {
+      setCurrentSong(songs[(currentIndex + 1) % songs.length]);
     }
-    if (diraction === "skip-forward") {
+    if (direction === "skip-back") {
       if ((currentIndex - 1) % songs.length === -1) {
         setCurrentSong(songs[songs.length - 1]);
+        playSong(isPlaying, audioRef);
         return;
       }
       setCurrentSong(songs[(currentIndex - 1) % songs.length]);
     }
+    playSong(isPlaying, audioRef);
   };
   return (
     <div className="player">
@@ -86,7 +89,7 @@ function Player({
           value={songInfo.currentTime}
           onChange={dragHandler}
         />
-        <p>{getTime(songInfo.duration)}</p>
+        <p>{songInfo.duration ? getTime(songInfo.duration) : "0:00"}</p>
       </div>
       <div className="player-control">
         {/* <FontAwesomeIcon icon={faPlay} /> */}

@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+.App {
+    transition: 0.2s linear all
+}
+
+.library-active {
+    margin-left: 30%
+}
+
+
+
 @import './player';
 @import './song';
 @import './library' ;

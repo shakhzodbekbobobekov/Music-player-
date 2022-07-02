@@ -2,7 +2,7 @@
 import "./styles/app.scss";
 import Player from "./components/Player";
 import Song from "./components/Song";
-import data from "./components/util";
+import data from "./components/data";
 import Library from "./components/Library";
 import React, { useState, useRef } from "react";
 import Nav from "./components/Nav";
@@ -33,7 +33,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className={`App ${libraryStatus ? "library-active" : ""}`}>
       <Nav libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus} />
       <Song currentSong={currentSong} />
       <Player
