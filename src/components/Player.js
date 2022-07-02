@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAngleLeft,
@@ -15,7 +15,27 @@ function Player({
   setSongInfo,
   songInfo,
   timeUpdateHandler,
+  songs,
+  setCurrentSong,
+  setSongs,
 }) {
+  useEffect(() => {
+    const newSongs = songs.map((song) => {
+      if (song.id === currentSong.id) {
+        return {
+          ...song,
+          active: true,
+        };
+      } else {
+        return {
+          ...song,
+          active: false,
+        };
+      }
+    });
+    setSongs(newSongs);
+  }, [currentSong]);
+
   //Event Handlers
   const playSongHandler = () => {
     console.log(audioRef.current);
@@ -42,6 +62,19 @@ function Player({
     });
   };
 
+  const skipTrackHandle = (diraction) => {
+    let currentIndex = songs.findIndex((song) => song.id === currentSong.id);
+    if (diraction === "skip-forward") {
+      setCurrentSong(songs[currentIndex + 1] % songs.length);
+    }
+    if (diraction === "skip-forward") {
+      if ((currentIndex - 1) % songs.length === -1) {
+        setCurrentSong(songs[songs.length - 1]);
+        return;
+      }
+      setCurrentSong(songs[(currentIndex - 1) % songs.length]);
+    }
+  };
   return (
     <div className="player">
       <div className="time-control">
@@ -57,7 +90,12 @@ function Player({
       </div>
       <div className="player-control">
         {/* <FontAwesomeIcon icon={faPlay} /> */}
-        <FontAwesomeIcon className="skip-back" icon={faAngleLeft} size="2x" />
+        <FontAwesomeIcon
+          onClick={() => skipTrackHandle("skip-back")}
+          className="skip-back"
+          icon={faAngleLeft}
+          size="2x"
+        />
         <FontAwesomeIcon
           onClick={playSongHandler}
           className="play"
@@ -65,6 +103,7 @@ function Player({
           size="2x"
         />
         <FontAwesomeIcon
+          onClick={() => skipTrackHandle("skip-forward")}
           className="skip-forward"
           icon={faAngleRight}
           size="2x"
